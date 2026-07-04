@@ -12,6 +12,8 @@ import {
 } from "@/lib/cv-builder-storage";
 import {
   trackStartBuilderClick,
+  trackCvExampleDownload,
+  trackCvExamplePrint,
 } from "@/lib/analytics";
 import type { JobCvData, JobTemplatePage } from "@/lib/job-template-pages";
 import { cn } from "@/lib/utils";
@@ -19,7 +21,11 @@ import {
   CV_CHECKLIST_DOWNLOAD_PATH,
   UK_CV_CHECKLIST,
 } from "@/lib/cv-checklist";
-import { printCvExample } from "@/lib/print-cv-example";
+import {
+  downloadCvExampleHtml,
+  mergeDraftIntoCvData,
+  printCvExample,
+} from "@/lib/print-cv-example";
 
 type CvBuilderFunnelProps = {
   page: JobTemplatePage;
@@ -153,6 +159,7 @@ export function CvBuilderFunnel({
           {step === "locked" ? (
             <LockScreen
               cvData={cvData}
+              draft={draft}
               builderLabel={page.builderLabel}
               templateSlug={page.slug}
               onStartOver={() => {
@@ -277,15 +284,33 @@ export function CvBuilderFunnel({
 
 function LockScreen({
   cvData,
+  draft,
   builderLabel,
   templateSlug,
   onStartOver,
 }: {
   cvData: JobCvData;
+  draft: Partial<CvBuilderDraft>;
   builderLabel: string;
   templateSlug: string;
   onStartOver: () => void;
 }) {
+  const exampleData = mergeDraftIntoCvData(cvData, draft);
+  const exampleTitle = `${builderLabel} CV Example UK`;
+
+  const handlePrint = () => {
+    trackCvExamplePrint(templateSlug);
+    const ok = printCvExample(exampleData, exampleTitle);
+    if (!ok) {
+      downloadCvExampleHtml(exampleData, exampleTitle);
+    }
+  };
+
+  const handleDownload = () => {
+    trackCvExampleDownload(templateSlug);
+    downloadCvExampleHtml(exampleData, exampleTitle);
+  };
+
   return (
     <div className="relative overflow-hidden rounded-2xl border border-violet-500/40 bg-card p-6 text-left md:p-8">
       <div className="text-center">
@@ -302,28 +327,34 @@ function LockScreen({
       <div className="mt-8 space-y-4">
         <div className="rounded-xl border border-border bg-muted/30 p-4">
           <h3 className="font-semibold">Free right now</h3>
-          <ul className="mt-3 space-y-2">
-            <li>
-              <button
-                type="button"
-                onClick={() =>
-                  printCvExample(cvData, `${builderLabel} CV Example UK`)
-                }
-                className="text-sm font-medium text-violet-600 hover:underline dark:text-violet-400"
-              >
-                Print / save this example CV layout (PDF via browser)
-              </button>
-            </li>
-            <li>
-              <a
-                href={CV_CHECKLIST_DOWNLOAD_PATH}
-                download="uk-cv-checklist.txt"
-                className="text-sm font-medium text-violet-600 hover:underline dark:text-violet-400"
-              >
-                Download UK CV checklist (.txt)
-              </a>
-            </li>
-          </ul>
+          <p className="mt-2 text-xs text-muted-foreground">
+            Uses the example layout below. To save as PDF: print and choose{" "}
+            <strong className="text-foreground">Save as PDF</strong> in the
+            dialog.
+          </p>
+          <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
+            <button
+              type="button"
+              onClick={handlePrint}
+              className="inline-flex items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-5 py-2.5 text-sm font-semibold text-white"
+            >
+              Print / Save as PDF
+            </button>
+            <button
+              type="button"
+              onClick={handleDownload}
+              className="inline-flex items-center justify-center rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold"
+            >
+              Download CV file (.html)
+            </button>
+            <a
+              href={CV_CHECKLIST_DOWNLOAD_PATH}
+              download="uk-cv-checklist.txt"
+              className="inline-flex items-center justify-center rounded-full border border-border bg-background px-5 py-2.5 text-sm font-semibold"
+            >
+              Download checklist
+            </a>
+          </div>
         </div>
 
         <div className="rounded-xl border border-border p-4">

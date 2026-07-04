@@ -40,6 +40,14 @@ export function trackAppInstallClick(
   });
 }
 
+export function trackCvExamplePrint(templateSlug: string) {
+  trackEvent("cv_example_print", { template_slug: templateSlug });
+}
+
+export function trackCvExampleDownload(templateSlug: string) {
+  trackEvent("cv_example_download", { template_slug: templateSlug });
+}
+
 /** @deprecated Use named track helpers */
 export function trackLegacyEvent({ action, category, label }: GtagEvent) {
   trackEvent(action, { event_category: category, event_label: label });
