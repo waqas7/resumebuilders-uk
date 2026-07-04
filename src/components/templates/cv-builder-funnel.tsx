@@ -244,8 +244,8 @@ export function CvBuilderFunnel({
                 <form onSubmit={completeStep2} className="space-y-4">
                   <h2 className="text-xl font-bold">Your headline & summary</h2>
                   <p className="text-sm text-muted-foreground">
-                    Step 2 of 2 — save your draft, then choose a free download
-                    or finish in the app.
+                    Step 2 of 2 — add your headline and summary. Work history
+                    and education can be edited in the Android app.
                   </p>
                   <Field
                     label="Job title"
@@ -318,21 +318,40 @@ function LockScreen({
       <div className="text-center">
         <Lock className="mx-auto h-10 w-10 text-violet-600" />
         <h2 className="mt-4 text-2xl font-bold">
-          Your draft is saved in this browser
+          Your details are saved on this device
         </h2>
-        <p className="mx-auto mt-3 max-w-md text-muted-foreground">
-          Take something useful now — free — then install the app when you are
-          ready to export your personalised PDF with all templates and AI tools.
+        <p className="mx-auto mt-3 max-w-lg text-sm text-muted-foreground">
+          We saved your name, email, phone, and summary in this browser only.
+          They stay here until you clear site data — they are not sent to our
+          servers and will not appear on another phone or computer.
         </p>
       </div>
 
-      <div className="mt-8 space-y-4">
+      <div className="mt-6 rounded-xl border border-amber-500/30 bg-amber-500/5 p-4">
+        <h3 className="font-semibold text-foreground">
+          Want to edit work experience, education, or skills?
+        </h3>
+        <p className="mt-2 text-sm text-muted-foreground">
+          This page only updates your contact details and summary. Work history,
+          education, and skills still show the example template. To change
+          those sections, add jobs, reorder content, and export a finished PDF,
+          download the free Android app.
+        </p>
+        <div className="mt-4">
+          <PlayStoreButton ctaSource="builder_lock_screen" templateSlug={templateSlug}>
+            Download Android App — Edit Full CV & Export PDF
+          </PlayStoreButton>
+        </div>
+      </div>
+
+      <div className="mt-6 space-y-4">
         <div className="rounded-xl border border-border bg-muted/30 p-4">
-          <h3 className="font-semibold">Free right now</h3>
-          <p className="mt-2 text-xs text-muted-foreground">
-            Uses the example layout below. To save as PDF: print and choose{" "}
+          <h3 className="font-semibold">Free on this page</h3>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Download or print an example CV layout with your contact details
+            filled in. To save as PDF, choose{" "}
             <strong className="text-foreground">Save as PDF</strong> in the
-            dialog.
+            print dialog.
           </p>
           <div className="mt-4 flex flex-col gap-2 sm:flex-row sm:flex-wrap">
             <button
@@ -372,25 +391,13 @@ function LockScreen({
         </div>
       </div>
 
-      <div className="mt-8 text-center">
-        <p className="text-sm font-medium text-foreground">
-          Ready to export your own CV as PDF?
-        </p>
-        <p className="mt-1 text-xs text-muted-foreground">
-          Personalised export with your name and summary — free in the Android
-          app.
-        </p>
-        <div className="mt-4">
-          <PlayStoreButton ctaSource="builder_lock_screen" templateSlug={templateSlug}>
-            Get the Android App — Export PDF Free
-          </PlayStoreButton>
-        </div>
+      <div className="mt-6 text-center">
         <button
           type="button"
           onClick={onStartOver}
-          className="mt-4 text-xs text-muted-foreground hover:underline"
+          className="text-sm text-muted-foreground hover:underline"
         >
-          Edit my details again
+          Edit my contact details again
         </button>
       </div>
     </div>
