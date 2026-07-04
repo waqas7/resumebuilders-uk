@@ -23,7 +23,7 @@ export const BRAND = {
   tagline: "Free UK CV maker app with ATS-friendly templates.",
   description:
     "Build ATS-friendly UK CVs in minutes. Free resume maker app with 20+ templates, guided builder, and one-tap PDF export on Android.",
-  logo: "/images/-cv-maker-app-logo.webp",
+  logo: "/images/resume-builder-cv-maker-app-logo.webp",
   logoAlt: "Resume Builders UK — free CV maker app logo",
   ogImage: "/images/og-resume-builder-android-app.webp",
   ogImageAlt:
@@ -53,7 +53,7 @@ export const APP: Project = {
   href: "/",
   accentClass: "from-blue-600 to-violet-600",
   features: [],
-  icon: "/images/-cv-maker-app-logo.webp",
+  icon: "/images/resume-builder-cv-maker-app-logo.webp",
   iconAlt: "Resume Builders UK app icon",
 };
 

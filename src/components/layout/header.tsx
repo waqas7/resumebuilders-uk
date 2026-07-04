@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BRAND, NAV_LINKS } from "@/lib/projects";
-import { APP_SHORT_NAME, IMAGES } from "@/lib/constants";
+import { IMAGES } from "@/lib/constants";
 import { ThemeToggle } from "./theme-toggle";
 import { PlayStoreButton } from "@/components/conversion/play-store-badge";
 import { Container } from "@/components/ui/button";
@@ -13,17 +13,17 @@ export function Header() {
   return (
     <header className="sticky top-0 z-40 border-b border-border/60 bg-background/80 backdrop-blur-lg">
       <Container className="flex h-16 items-center justify-between gap-4">
-        <Link href="/" className="flex shrink-0 items-center gap-2.5">
+        <Link href="/" className="flex min-w-0 shrink items-center gap-2.5">
           <Image
             src={IMAGES.logo}
             alt={IMAGES.logoAlt}
             width={36}
             height={36}
-            className="rounded-lg"
+            className="shrink-0 rounded-lg"
             priority
           />
-          <span className="hidden max-w-[140px] truncate font-bold sm:inline md:max-w-none">
-            {APP_SHORT_NAME}
+          <span className="truncate text-sm font-bold sm:text-base">
+            {BRAND.shortName}
           </span>
         </Link>
 

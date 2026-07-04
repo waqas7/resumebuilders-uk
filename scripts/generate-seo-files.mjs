@@ -62,7 +62,7 @@ function buildSitemapXml() {
   const lastmod = new Date().toISOString();
   const urls = [
     ...STATIC_ROUTES.map((routePath) => ({
-      loc: `${SITE_URL}${routePath}`,
+      loc: routePath === "" ? `${SITE_URL}/` : `${SITE_URL}${routePath}`,
       lastmod,
       changefreq: "weekly",
       priority: getPriority(routePath),
