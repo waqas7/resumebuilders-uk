@@ -124,6 +124,9 @@ export function getResumeBuilderVideoSchema() {
     name: RESUME_BUILDER_YOUTUBE_SHORT.title,
     description: RESUME_BUILDER_YOUTUBE_SHORT.description,
     thumbnailUrl: RESUME_BUILDER_YOUTUBE_SHORT.thumbnailUrl,
+    uploadDate: RESUME_BUILDER_YOUTUBE_SHORT.uploadDate,
+    datePublished: RESUME_BUILDER_YOUTUBE_SHORT.uploadDate,
+    duration: RESUME_BUILDER_YOUTUBE_SHORT.duration,
     embedUrl: RESUME_BUILDER_YOUTUBE_SHORT.embedUrl,
     contentUrl: RESUME_BUILDER_YOUTUBE_SHORT.watchUrl,
     publisher: {

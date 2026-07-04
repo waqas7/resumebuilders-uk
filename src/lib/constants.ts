@@ -16,6 +16,10 @@ export const RESUME_BUILDER_YOUTUBE_SHORT = {
   watchUrl: "https://www.youtube.com/shorts/QPfH0Amjias",
   embedUrl: "https://www.youtube.com/embed/QPfH0Amjias",
   thumbnailUrl: "https://i.ytimg.com/vi/QPfH0Amjias/hqdefault.jpg",
+  /** YouTube publish time (UTC ISO 8601) — keep in sync with the video on YouTube. */
+  uploadDate: "2026-07-01T16:45:13Z",
+  /** ISO 8601 duration (60s Short). */
+  duration: "PT1M",
 } as const;
 
 export const SUPPORT_EMAIL =
