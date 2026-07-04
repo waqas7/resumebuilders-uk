@@ -7,9 +7,9 @@ import { PlayStoreButton } from "@/components/conversion/play-store-badge";
 
 const TEMPLATE_LINKS = [
   { href: "/templates/ats-friendly-cv-template", label: "ATS CV template" },
+  { href: "/templates/care-home-worker-cv-uk", label: "Care home CV" },
   { href: "/templates/student-cv-no-experience", label: "Student CV" },
   { href: "/templates/retail-assistant-cv-uk", label: "Retail assistant CV" },
-  { href: "/templates/customer-service-cv-uk", label: "Customer service CV" },
 ] as const;
 
 export function Footer() {

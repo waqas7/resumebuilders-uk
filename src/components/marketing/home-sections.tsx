@@ -140,7 +140,7 @@ export function JobTemplatesPreviewSection() {
             <span className="gradient-text">Job & Intent</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Real CV templates for retail, admin, students, career changers, and
+            Real CV templates for retail, care home, admin, students, career changers, and
             more. Preview the full layout, start building free, and export PDF
             in the app.
           </p>

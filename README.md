@@ -60,8 +60,7 @@ NEXT_PUBLIC_SUPPORT_EMAIL=mwk.pkx@gmail.com
 
 ## SEO
 
-- Auto-generated `sitemap.xml` and `robots.txt` on build
-- Keyword redirects in `public/_redirects`
+- Auto-generated `sitemap.xml`, `robots.txt`, and `_redirects` on build
 - JSON-LD: SoftwareApplication, FAQ, Video, BlogPosting, BreadcrumbList
 - 14 job-intent CV funnel pages with analytics events
 

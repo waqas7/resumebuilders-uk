@@ -1032,6 +1032,89 @@ export const JOB_TEMPLATE_PAGES: JobTemplatePage[] = [
         "PRINCE2 Foundation — 2024\nBA Business Management — Oxford Brookes, 2014",
     },
   },
+  {
+    slug: "care-home-worker-cv-uk",
+    h1: "Care Home CV Example UK — Compelling Template for Care Jobs",
+    heroHeadline: "Care Home CV Example UK — Compelling Template for Care Jobs",
+    heroSubtext:
+      "Stand out for care assistant, support worker, and residential care roles with a UK CV that proves compassion, safeguarding awareness, and hands-on care experience recruiters trust.",
+    metaTitle:
+      "Care Home CV Example UK — Free Care Assistant Template & CV Builder",
+    metaDescription:
+      "Care home CV example for UK care assistant and support worker jobs. ATS-friendly layout, safeguarding keywords, DBS-ready format, and free Android app to export PDF.",
+    keywords: [
+      "care home CV UK",
+      "care assistant CV example",
+      "support worker CV UK",
+      "care home jobs CV",
+      "residential care CV template",
+      "NVQ care CV UK",
+    ],
+    previewVariant: "ats-standard",
+    builderLabel: "Care Home Worker",
+    relatedSlugs: [
+      "customer-service-cv-uk",
+      "receptionist-cv-uk",
+      "cv-after-career-break-uk",
+    ],
+    whyItWorks: [
+      "Leads with person-centred care language recruiters and CQC-aware employers expect",
+      "Safeguarding, moving & handling, and medication keywords for ATS and agency portals",
+      "DBS and mandatory training listed clearly — essential for UK care home hiring",
+      "Quantified care outcomes: resident wellbeing, incident reduction, team reliability",
+      "Single-column ATS layout works with NHS Jobs, Reed, and care sector recruiters",
+    ],
+    cvData: {
+      name: "Amelia Hughes",
+      title: "Care Assistant",
+      email: "amelia.hughes@email.co.uk",
+      phone: "+44 7700 902100",
+      location: "Nottingham, UK",
+      summary:
+        "Compassionate care assistant with 4 years in CQC-registered residential and dementia care homes across the East Midlands. Skilled in personal care, moving & handling, medication support, and safeguarding. Reliable on rotating shifts including weekends and bank holidays.",
+      skills: [
+        "Personal Care & Hygiene",
+        "Moving & Handling",
+        "Medication Administration",
+        "Safeguarding Adults",
+        "Dementia & Person-Centred Care",
+        "First Aid & Manual Handling",
+      ],
+      experience: [
+        {
+          role: "Senior Care Assistant",
+          company: "Meadowbrook Care Home, Nottingham",
+          period: "2022 – Present",
+          bullets: [
+            "Supported 20+ residents daily with dignity-focused personal care and mobility assistance",
+            "Administered prescribed medications under MAR chart protocols with zero safeguarding incidents",
+            "Mentored 3 new starters on infection control, documentation, and de-escalation for dementia behaviours",
+          ],
+        },
+        {
+          role: "Care Assistant",
+          company: "Willow Lodge Residential Care",
+          period: "2020 – 2022",
+          bullets: [
+            "Maintained accurate daily care notes and handover records for nursing and management teams",
+            "Reduced falls risk through proactive repositioning and mobility support plans",
+            "Built trusted relationships with residents' families during visits and care plan reviews",
+          ],
+        },
+        {
+          role: "Healthcare Support Volunteer",
+          company: "Age UK Nottingham",
+          period: "2019 – 2020",
+          bullets: [
+            "Assisted with wellbeing activities and companionship for 15+ elderly service users weekly",
+            "Completed safeguarding awareness training before starting client-facing shifts",
+          ],
+        },
+      ],
+      education:
+        "NVQ Level 2 Health & Social Care — Nottingham College, 2020\nEnhanced DBS (Update Service) · Moving & Handling Certificate · Medication Administration Training",
+    },
+  },
 ];
 
 const pageMap = new Map(JOB_TEMPLATE_PAGES.map((p) => [p.slug, p]));

@@ -89,6 +89,8 @@ Reception, medical secretary, porter, and finance roles in NHS trusts follow sta
 
 See [receptionist CV template](/templates/receptionist-cv-uk) for front-of-house examples.
 
+For residential and dementia care roles, use our [care home worker CV template](/templates/care-home-worker-cv-uk) and [care home jobs CV guide](/blog/care-home-jobs-cv-uk).
+
 ## Common Public Sector CV Mistakes
 
 1. Ignoring the person specification — apply only if you meet essentials
