@@ -11,7 +11,7 @@ import {
   RESUME_BUILDER_FAQS,
   TRUST,
 } from "@/lib/constants";
-import { JOB_TEMPLATE_PAGES } from "@/lib/job-template-pages";
+import { JOB_TEMPLATE_COUNT, JOB_TEMPLATE_PAGES } from "@/lib/job-template-pages";
 import {
   FEATURED_BLOG_LINKS,
   HOMEPAGE_FEATURED_TEMPLATE_SLUGS,
@@ -38,7 +38,7 @@ export function HeroSection() {
             </h1>
             <p className="mt-6 text-lg text-muted-foreground md:text-xl">
               Download the free CV maker app for Android. Build ATS-friendly UK
-              CVs with 26 job templates, offline mode, PDF export, and an ATS
+              CVs with {JOB_TEMPLATE_COUNT} job templates, offline mode, PDF export, and an ATS
               score checker — ideal for freshers and career changers.
             </p>
 
@@ -171,7 +171,7 @@ export function JobTemplatesPreviewSection() {
             href="/templates"
             className="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-400"
           >
-            View all {JOB_TEMPLATE_PAGES.length} CV templates →
+            View all {JOB_TEMPLATE_COUNT} CV templates →
           </Link>
           <Link
             href="/blog"

@@ -26,7 +26,7 @@ export const FEATURES: Feature[] = [
     title: "AI Resume Generator",
     headline: "Write smarter resumes with AI assistance",
     description:
-      "Our AI resume builder app helps you craft professional summaries, bullet points, and skills sections tailored to your job title. Create resume online in minutes—not hours.",
+      "Our AI resume builder app helps you craft professional summaries, bullet points, and skills sections tailored to your job title — on Android, in minutes not hours.",
     icon: Brain,
     image: "guidedBuilder",
     bullets: [

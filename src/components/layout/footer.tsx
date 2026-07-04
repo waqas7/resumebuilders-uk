@@ -102,6 +102,16 @@ export function Footer() {
                 </a>
               </li>
               <li>
+                <Link href="/privacy" className="hover:text-foreground">
+                  Privacy policy
+                </Link>
+              </li>
+              <li>
+                <Link href="/terms" className="hover:text-foreground">
+                  Terms of use
+                </Link>
+              </li>
+              <li>
                 <a
                   href={playStoreHref}
                   target="_blank"

@@ -27,16 +27,9 @@ const STATIC_ROUTES = [
   "/features",
   "/templates",
   "/pricing",
+  "/privacy",
+  "/terms",
 ];
-
-function getPriority(routePath) {
-  if (routePath === "") return 1.0;
-  if (routePath === "/templates") return 0.95;
-  if (routePath.startsWith("/templates/")) return 0.9;
-  if (routePath === "/features" || routePath === "/pricing") return 0.85;
-  if (routePath === "/blog") return 0.7;
-  return 0.8;
-}
 
 function getBlogSlugs() {
   const postsDir = path.join(process.cwd(), "content/blog");
@@ -46,64 +39,6 @@ function getBlogSlugs() {
     .readdirSync(postsDir)
     .filter((name) => name.endsWith(".md"))
     .map((name) => name.replace(/\.md$/, ""));
-}
-
-function escapeXml(value) {
-  return value
-    .replace(/&/g, "&amp;")
-    .replace(/</g, "&lt;")
-    .replace(/>/g, "&gt;")
-    .replace(/"/g, "&quot;")
-    .replace(/'/g, "&apos;");
-}
-
-function buildSitemapXml() {
-  const lastmod = new Date().toISOString();
-  const urls = [
-    ...STATIC_ROUTES.map((routePath) => ({
-      loc: routePath === "" ? `${SITE_URL}/` : `${SITE_URL}${routePath}`,
-      lastmod,
-      changefreq: "weekly",
-      priority: getPriority(routePath),
-    })),
-    ...getBlogSlugs().map((slug) => ({
-      loc: `${SITE_URL}/blog/${slug}`,
-      lastmod,
-      changefreq: "monthly",
-      priority: 0.7,
-    })),
-    ...getJobTemplateSlugs().map((slug) => ({
-      loc: `${SITE_URL}/templates/${slug}`,
-      lastmod,
-      changefreq: "weekly",
-      priority: 0.9,
-    })),
-  ];
-
-  const body = urls
-    .map(
-      (entry) => `  <url>
-    <loc>${escapeXml(entry.loc)}</loc>
-    <lastmod>${entry.lastmod}</lastmod>
-    <changefreq>${entry.changefreq}</changefreq>
-    <priority>${entry.priority}</priority>
-  </url>`
-    )
-    .join("\n");
-
-  return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${body}
-</urlset>
-`;
-}
-
-function buildRobotsTxt() {
-  return `User-agent: *
-Allow: /
-
-Sitemap: ${SITE_URL}/sitemap.xml
-`;
 }
 
 function keywordToPath(keyword) {
@@ -266,14 +201,12 @@ fs.mkdirSync(publicDir, { recursive: true });
 
 const redirectsContent = buildRedirects();
 
-fs.writeFileSync(path.join(publicDir, "sitemap.xml"), buildSitemapXml(), "utf8");
-fs.writeFileSync(path.join(publicDir, "robots.txt"), buildRobotsTxt(), "utf8");
 fs.writeFileSync(path.join(publicDir, "_redirects"), `${redirectsContent}\n`, "utf8");
 
 const urlCount =
   STATIC_ROUTES.length + getBlogSlugs().length + getJobTemplateSlugs().length;
 const redirectCount = redirectsContent.split("\n").filter(Boolean).length;
 
-console.log("Generated sitemap.xml, robots.txt, and _redirects for", SITE_URL);
-console.log(`  Sitemap URLs: ${urlCount}`);
+console.log("Generated _redirects for", SITE_URL);
+console.log(`  Expected sitemap URLs (via app/sitemap.ts): ${urlCount}`);
 console.log(`  Redirect rules: ${redirectCount}`);

@@ -41,10 +41,8 @@ export function buildMetadata({
   publishedTime,
 }: PageMeta): Metadata {
   const url = `${SITE_URL}${path}`;
-  const fullTitle =
-    path === "/"
-      ? title
-      : `${title} | ${BRAND.name}`;
+  const brandedTitle =
+    path === "/" ? title : `${title} | ${BRAND.name}`;
 
   const og = ogImage
     ? { url: ogImage, alt: ogImageAlt ?? description }
@@ -52,7 +50,8 @@ export function buildMetadata({
 
   return {
     ...sharedMetadata,
-    title: fullTitle,
+    // Layout applies `%s | ${BRAND.name}` — pass plain title for inner pages.
+    title: path === "/" ? { absolute: title } : title,
     description,
     keywords: keywords.join(", "),
     alternates: { canonical: url },
@@ -60,7 +59,7 @@ export function buildMetadata({
       type,
       locale: "en_GB",
       url,
-      title: fullTitle,
+      title: brandedTitle,
       description,
       siteName: BRAND.name,
       images: [{ url: og.url, width: 1200, height: 630, alt: og.alt }],
@@ -70,7 +69,7 @@ export function buildMetadata({
     },
     twitter: {
       card: "summary_large_image",
-      title: fullTitle,
+      title: brandedTitle,
       description,
       images: [og.url],
     },

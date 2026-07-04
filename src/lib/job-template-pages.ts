@@ -1101,6 +1101,8 @@ export function getAllJobTemplateSlugs(): string[] {
   return JOB_TEMPLATE_PAGES.map((p) => p.slug);
 }
 
+export const JOB_TEMPLATE_COUNT = JOB_TEMPLATE_PAGES.length;
+
 export function getRelatedTemplates(slugs: string[]): JobTemplatePage[] {
   return slugs
     .map((s) => pageMap.get(s))
