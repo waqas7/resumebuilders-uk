@@ -146,6 +146,8 @@ export function CvBuilderFunnel({
                 data={cvData}
                 draft={{
                   fullName: draft.fullName,
+                  email: draft.email,
+                  phone: draft.phone,
                   jobTitle: draft.jobTitle,
                   summary: draft.summary,
                 }}

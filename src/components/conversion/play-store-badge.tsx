@@ -1,9 +1,19 @@
 "use client";
 
+import Image from "next/image";
 import { PLAY_STORE_URL } from "@/lib/constants";
 import { getPlayStoreUrl, type PlayStoreLinkOptions } from "@/lib/play-store-url";
 import { trackAppInstallClick } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
+
+const GOOGLE_PLAY_BADGE = "/badges/google-play-badge.png";
+
+/** Official badge aspect ratio (646×250). */
+const BADGE_HEIGHT = {
+  sm: 40,
+  md: 50,
+  lg: 60,
+} as const;
 
 type PlayStoreCtaProps = {
   className?: string;
@@ -46,6 +56,8 @@ export function PlayStoreBadge({
   ...props
 }: PlayStoreBadgeProps) {
   const href = resolvePlayStoreHref({ ctaSource, templateSlug, playStoreUrl });
+  const height = BADGE_HEIGHT[size];
+  const width = Math.round(height * (646 / 250));
 
   return (
     <a
@@ -53,36 +65,18 @@ export function PlayStoreBadge({
       target="_blank"
       rel="noopener noreferrer"
       onClick={handlePlayStoreClick(ctaSource, templateSlug, onClick)}
-      className={cn(
-        "inline-flex items-center gap-3 rounded-xl bg-black px-4 py-2.5 text-white transition hover:bg-zinc-900",
-        size === "sm" && "px-3 py-2 text-sm",
-        size === "lg" && "px-5 py-3",
-        className
-      )}
+      className={cn("inline-block transition hover:opacity-90", className)}
       aria-label="Get it on Google Play"
       {...props}
     >
-      <svg
-        viewBox="0 0 24 24"
-        className={cn(
-          "shrink-0",
-          size === "sm" ? "h-6 w-6" : size === "lg" ? "h-9 w-9" : "h-8 w-8"
-        )}
-        aria-hidden
-      >
-        <path
-          fill="currentColor"
-          d="M3.6 1.8c-.3.2-.5.5-.5.9v18.6c0 .4.2.7.5.9l10.2-10.2L3.6 1.8zm11.4 9.4 2.7 2.7-9.5 5.5 6.8-8.2zm3.1 2.8 2.4 1.4c.9.5.9 1.7 0 2.2l-2.4 1.4-2.9-2.9 2.9-2.1zM5.1 2.9l9.5 5.5-2.7 2.7L5.1 2.9z"
-        />
-      </svg>
-      <span className="flex flex-col leading-tight">
-        <span className="text-[10px] uppercase tracking-wide opacity-80">
-          Get it on
-        </span>
-        <span className={cn("font-semibold", size === "lg" ? "text-lg" : "text-sm")}>
-          Google Play
-        </span>
-      </span>
+      <Image
+        src={GOOGLE_PLAY_BADGE}
+        alt="Get it on Google Play"
+        width={width}
+        height={height}
+        className="h-auto w-auto"
+        style={{ height, width: "auto", maxWidth: "none" }}
+      />
     </a>
   );
 }

@@ -9,6 +9,8 @@ type JobCvPreviewProps = {
   size?: "default" | "card";
   draft?: {
     fullName?: string;
+    email?: string;
+    phone?: string;
     jobTitle?: string;
     summary?: string;
   };
@@ -61,6 +63,8 @@ export function JobCvPreview({
   const name = draft?.fullName?.trim() || data.name;
   const title = draft?.jobTitle?.trim() || data.title;
   const summary = draft?.summary?.trim() || data.summary;
+  const email = draft?.email?.trim() || data.email;
+  const phone = draft?.phone?.trim() || data.phone;
   const s = sizeStyles[size];
 
   const sectionClass = highlightSections
@@ -78,7 +82,7 @@ export function JobCvPreview({
         <h2 className={s.name}>{name}</h2>
         <p className={cn("mt-0.5", s.title)}>{title}</p>
         <p className={cn("mt-1", s.contact)}>
-          {data.email} · {data.phone} · {data.location}
+          {email} · {phone} · {data.location}
         </p>
       </header>
 
