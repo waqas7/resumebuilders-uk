@@ -5,7 +5,6 @@ import {
   SITE_URL,
   IMAGES,
   SUPPORT_EMAIL,
-  TRUST,
 } from "./constants";
 
 export function getSoftwareApplicationSchemaForProject(project: Project) {
@@ -24,13 +23,6 @@ export function getSoftwareApplicationSchemaForProject(project: Project) {
     url: SITE_URL,
     image: `${SITE_URL}${project.icon}`,
     description: project.description,
-    aggregateRating: {
-      "@type": "AggregateRating",
-      ratingValue: TRUST.rating,
-      ratingCount: TRUST.ratingCount,
-      bestRating: 5,
-      worstRating: 1,
-    },
   };
 }
 

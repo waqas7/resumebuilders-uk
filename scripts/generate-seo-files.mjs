@@ -5,11 +5,19 @@ const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://resumebuilders.uk";
 
 function getJobTemplateSlugs() {
-  const filePath = path.join(process.cwd(), "src/lib/job-template-pages.ts");
-  if (!fs.existsSync(filePath)) return [];
-
-  const content = fs.readFileSync(filePath, "utf8");
-  return [...content.matchAll(/^\s+slug:\s*"([^"]+)"/gm)].map((match) => match[1]);
+  const files = [
+    path.join(process.cwd(), "src/lib/job-template-pages.ts"),
+    path.join(process.cwd(), "src/lib/job-template-pages-extra.ts"),
+  ];
+  const slugs = new Set();
+  for (const filePath of files) {
+    if (!fs.existsSync(filePath)) continue;
+    const content = fs.readFileSync(filePath, "utf8");
+    for (const match of content.matchAll(/^\s+slug:\s*"([^"]+)"/gm)) {
+      slugs.add(match[1]);
+    }
+  }
+  return [...slugs];
 }
 
 const STATIC_ROUTES = [
@@ -190,6 +198,16 @@ const TEMPLATE_ALIASES = {
     "care-home-cv-uk",
     "support-worker-cv-uk",
   ],
+  "hgv-driver-cv-uk": ["hgv-driver-cv", "hgv-cv-uk", "class-1-driver-cv"],
+  "cleaner-cv-uk": ["cleaner-cv", "cleaning-operative-cv-uk"],
+  "teaching-assistant-cv-uk": ["teaching-assistant-cv", "ta-cv-uk", "school-ta-cv"],
+  "hospitality-waitress-cv-uk": ["waitress-cv-uk", "waiter-cv-uk", "hospitality-cv"],
+  "nhs-healthcare-assistant-cv-uk": ["nhs-hca-cv", "healthcare-assistant-cv-uk", "band-2-hca-cv"],
+  "delivery-driver-cv-uk": ["delivery-driver-cv", "van-driver-cv-uk"],
+  "kitchen-porter-cv-uk": ["kitchen-porter-cv", "kp-cv-uk"],
+  "bar-staff-cv-uk": ["bar-staff-cv", "bartender-cv-uk"],
+  "security-guard-cv-uk": ["security-guard-cv", "sia-cv-uk", "door-supervisor-cv"],
+  "apprenticeship-cv-uk": ["apprenticeship-cv", "school-leaver-cv-uk"],
 };
 
 const BLOG_ALIASES = {

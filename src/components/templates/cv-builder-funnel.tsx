@@ -11,11 +11,15 @@ import {
   type CvBuilderDraft,
 } from "@/lib/cv-builder-storage";
 import {
-  trackAppInstallClick,
   trackStartBuilderClick,
 } from "@/lib/analytics";
 import type { JobCvData, JobTemplatePage } from "@/lib/job-template-pages";
 import { cn } from "@/lib/utils";
+import {
+  CV_CHECKLIST_DOWNLOAD_PATH,
+  UK_CV_CHECKLIST,
+} from "@/lib/cv-checklist";
+import { printCvExample } from "@/lib/print-cv-example";
 
 type CvBuilderFunnelProps = {
   page: JobTemplatePage;
@@ -98,10 +102,6 @@ export function CvBuilderFunnel({
     setStep("locked");
   };
 
-  const handleInstallClick = () => {
-    trackAppInstallClick("builder_lock_screen", page.slug);
-  };
-
   if (step === "idle") {
     return (
       <section id="cv-builder" className="scroll-mt-20">
@@ -152,7 +152,9 @@ export function CvBuilderFunnel({
         <div className="order-1 lg:order-2">
           {step === "locked" ? (
             <LockScreen
-              onInstallClick={handleInstallClick}
+              cvData={cvData}
+              builderLabel={page.builderLabel}
+              templateSlug={page.slug}
               onStartOver={() => {
                 clearDraft(page.slug);
                 setStep("step1");
@@ -233,7 +235,8 @@ export function CvBuilderFunnel({
                 <form onSubmit={completeStep2} className="space-y-4">
                   <h2 className="text-xl font-bold">Your headline & summary</h2>
                   <p className="text-sm text-muted-foreground">
-                    Step 2 of 2 — almost done. Export unlocks in the app.
+                    Step 2 of 2 — save your draft, then choose a free download
+                    or finish in the app.
                   </p>
                   <Field
                     label="Job title"
@@ -260,7 +263,7 @@ export function CvBuilderFunnel({
                     type="submit"
                     className="w-full rounded-full bg-gradient-to-r from-blue-600 to-violet-600 py-3 font-semibold text-white"
                   >
-                    Preview & export →
+                    Preview & save draft →
                   </button>
                 </form>
               )}
@@ -273,38 +276,90 @@ export function CvBuilderFunnel({
 }
 
 function LockScreen({
-  onInstallClick,
+  cvData,
+  builderLabel,
+  templateSlug,
   onStartOver,
 }: {
-  onInstallClick: () => void;
+  cvData: JobCvData;
+  builderLabel: string;
+  templateSlug: string;
   onStartOver: () => void;
 }) {
   return (
-    <div className="relative overflow-hidden rounded-2xl border border-violet-500/40 bg-card p-8 text-center">
-      <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-transparent to-background/80" />
-      <Lock className="relative mx-auto h-12 w-12 text-violet-600" />
-      <h2 className="relative mt-4 text-2xl font-bold">
-        Export to PDF Available in Android App
-      </h2>
-      <p className="relative mx-auto mt-3 max-w-md text-muted-foreground">
-        Your CV progress is saved. Download the free app to export PDF, unlock
-        all templates, and finish your CV in under 2 minutes.
-      </p>
-      <p className="relative mt-2 text-sm font-medium text-violet-600 dark:text-violet-400">
-        Most users download the app to finish their CV in under 2 minutes
-      </p>
-      <div className="relative mt-8">
-        <PlayStoreButton onClick={onInstallClick}>
-          Download App to Continue
-        </PlayStoreButton>
+    <div className="relative overflow-hidden rounded-2xl border border-violet-500/40 bg-card p-6 text-left md:p-8">
+      <div className="text-center">
+        <Lock className="mx-auto h-10 w-10 text-violet-600" />
+        <h2 className="mt-4 text-2xl font-bold">
+          Your draft is saved in this browser
+        </h2>
+        <p className="mx-auto mt-3 max-w-md text-muted-foreground">
+          Take something useful now — free — then install the app when you are
+          ready to export your personalised PDF with all templates and AI tools.
+        </p>
       </div>
-      <button
-        type="button"
-        onClick={onStartOver}
-        className="relative mt-4 text-xs text-muted-foreground hover:underline"
-      >
-        Edit details again
-      </button>
+
+      <div className="mt-8 space-y-4">
+        <div className="rounded-xl border border-border bg-muted/30 p-4">
+          <h3 className="font-semibold">Free right now</h3>
+          <ul className="mt-3 space-y-2">
+            <li>
+              <button
+                type="button"
+                onClick={() =>
+                  printCvExample(cvData, `${builderLabel} CV Example UK`)
+                }
+                className="text-sm font-medium text-violet-600 hover:underline dark:text-violet-400"
+              >
+                Print / save this example CV layout (PDF via browser)
+              </button>
+            </li>
+            <li>
+              <a
+                href={CV_CHECKLIST_DOWNLOAD_PATH}
+                download="uk-cv-checklist.txt"
+                className="text-sm font-medium text-violet-600 hover:underline dark:text-violet-400"
+              >
+                Download UK CV checklist (.txt)
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div className="rounded-xl border border-border p-4">
+          <h3 className="font-semibold">Quick CV checklist</h3>
+          <ul className="mt-3 max-h-48 space-y-2 overflow-y-auto text-sm text-muted-foreground">
+            {UK_CV_CHECKLIST.map((item) => (
+              <li key={item} className="flex gap-2">
+                <span className="text-violet-600">✓</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-8 text-center">
+        <p className="text-sm font-medium text-foreground">
+          Ready to export your own CV as PDF?
+        </p>
+        <p className="mt-1 text-xs text-muted-foreground">
+          Personalised export with your name and summary — free in the Android
+          app.
+        </p>
+        <div className="mt-4">
+          <PlayStoreButton ctaSource="builder_lock_screen" templateSlug={templateSlug}>
+            Get the Android App — Export PDF Free
+          </PlayStoreButton>
+        </div>
+        <button
+          type="button"
+          onClick={onStartOver}
+          className="mt-4 text-xs text-muted-foreground hover:underline"
+        >
+          Edit my details again
+        </button>
+      </div>
     </div>
   );
 }

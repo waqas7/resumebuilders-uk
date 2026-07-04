@@ -4,10 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import { Menu, X } from "lucide-react";
 import { NAV_LINKS } from "@/lib/projects";
-import { PLAY_STORE_URL } from "@/lib/constants";
+import { getPlayStoreUrl } from "@/lib/play-store-url";
+import { trackAppInstallClick } from "@/lib/analytics";
 
 export function MobileNav() {
   const [open, setOpen] = useState(false);
+  const playStoreHref = getPlayStoreUrl({ source: "mobile_nav" });
 
   return (
     <div className="md:hidden">
@@ -34,9 +36,10 @@ export function MobileNav() {
               </Link>
             ))}
             <a
-              href={PLAY_STORE_URL}
+              href={playStoreHref}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackAppInstallClick("mobile_nav")}
               className="mt-2 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-4 py-3 text-center text-sm font-semibold text-white"
             >
               Download on Google Play

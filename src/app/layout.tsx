@@ -4,7 +4,7 @@ import "./globals.css";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
 import { ThemeProvider } from "@/components/layout/theme-provider";
-import { StickyDownloadBar } from "@/components/conversion/sticky-download-bar";
+import { ConditionalStickyDownloadBar } from "@/components/layout/conditional-sticky-bar";
 import { GoogleAnalytics } from "@/components/seo/google-analytics";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getOrganizationSchema, getWebSiteSchema } from "@/lib/schema";
@@ -40,7 +40,7 @@ export default function RootLayout({
           <Header />
           <main className="flex-1">{children}</main>
           <Footer />
-          <StickyDownloadBar />
+          <ConditionalStickyDownloadBar />
         </ThemeProvider>
       </body>
     </html>

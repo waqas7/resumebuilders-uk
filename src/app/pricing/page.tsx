@@ -94,7 +94,7 @@ export default function PricingPage() {
                   </li>
                 ))}
               </ul>
-              <PlayStoreButton className="mt-8 w-full">
+              <PlayStoreButton ctaSource="pricing_free" className="mt-8 w-full">
                 Download Free
               </PlayStoreButton>
             </div>
@@ -118,7 +118,7 @@ export default function PricingPage() {
                   </li>
                 ))}
               </ul>
-              <PlayStoreButton className="mt-8 w-full" data-cta-variant="premium">
+              <PlayStoreButton ctaSource="pricing_premium" className="mt-8 w-full" data-cta-variant="premium">
                 Upgrade Now
               </PlayStoreButton>
             </div>

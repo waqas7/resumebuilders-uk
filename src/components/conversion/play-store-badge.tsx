@@ -1,25 +1,58 @@
+"use client";
+
 import { PLAY_STORE_URL } from "@/lib/constants";
+import { getPlayStoreUrl, type PlayStoreLinkOptions } from "@/lib/play-store-url";
+import { trackAppInstallClick } from "@/lib/analytics";
 import { cn } from "@/lib/utils";
 
-type PlayStoreBadgeProps = {
+type PlayStoreCtaProps = {
   className?: string;
-  size?: "sm" | "md" | "lg";
+  ctaSource: string;
+  templateSlug?: string;
   playStoreUrl?: string;
 } & React.AnchorHTMLAttributes<HTMLAnchorElement>;
+
+function resolvePlayStoreHref({
+  ctaSource,
+  templateSlug,
+  playStoreUrl,
+}: Pick<PlayStoreCtaProps, "ctaSource" | "templateSlug" | "playStoreUrl">) {
+  if (playStoreUrl && playStoreUrl !== PLAY_STORE_URL) return playStoreUrl;
+  return getPlayStoreUrl({ source: ctaSource, templateSlug });
+}
+
+function handlePlayStoreClick(
+  ctaSource: string,
+  templateSlug: string | undefined,
+  onClick?: React.MouseEventHandler<HTMLAnchorElement>
+) {
+  return (event: React.MouseEvent<HTMLAnchorElement>) => {
+    trackAppInstallClick(ctaSource, templateSlug);
+    onClick?.(event);
+  };
+}
+
+type PlayStoreBadgeProps = {
+  size?: "sm" | "md" | "lg";
+} & PlayStoreCtaProps;
 
 export function PlayStoreBadge({
   className,
   size = "md",
-  playStoreUrl = PLAY_STORE_URL,
+  ctaSource,
+  templateSlug,
+  playStoreUrl,
   onClick,
   ...props
 }: PlayStoreBadgeProps) {
+  const href = resolvePlayStoreHref({ ctaSource, templateSlug, playStoreUrl });
+
   return (
     <a
-      href={playStoreUrl}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
-      onClick={onClick}
+      onClick={handlePlayStoreClick(ctaSource, templateSlug, onClick)}
       className={cn(
         "inline-flex items-center gap-3 rounded-xl bg-black px-4 py-2.5 text-white transition hover:bg-zinc-900",
         size === "sm" && "px-3 py-2 text-sm",
@@ -57,18 +90,22 @@ export function PlayStoreBadge({
 export function PlayStoreButton({
   className,
   children = "Download Free",
-  playStoreUrl = PLAY_STORE_URL,
+  ctaSource,
+  templateSlug,
+  playStoreUrl,
+  onClick,
   ...props
 }: {
-  className?: string;
   children?: React.ReactNode;
-  playStoreUrl?: string;
-} & React.AnchorHTMLAttributes<HTMLAnchorElement>) {
+} & PlayStoreCtaProps) {
+  const href = resolvePlayStoreHref({ ctaSource, templateSlug, playStoreUrl });
+
   return (
     <a
-      href={playStoreUrl}
+      href={href}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={handlePlayStoreClick(ctaSource, templateSlug, onClick)}
       className={cn(
         "inline-flex items-center justify-center gap-2 rounded-full bg-gradient-to-r from-blue-600 to-violet-600 px-6 py-3 text-base font-semibold text-white shadow-lg shadow-violet-500/25 transition hover:brightness-110",
         className
@@ -79,3 +116,5 @@ export function PlayStoreButton({
     </a>
   );
 }
+
+export type { PlayStoreLinkOptions };

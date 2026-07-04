@@ -10,7 +10,7 @@ SEO-optimised marketing site for the **Resume Builder & CV Maker** Android app.
 |-------|-------------|
 | `/` | Landing page — hero, CV examples, video demo, install CTAs |
 | `/features` | App features (ATS checker, AI, PDF export) |
-| `/templates` | UK CV examples by job (14 funnel pages) |
+| `/templates` | UK CV examples by job (26 funnel pages) |
 | `/templates/[slug]` | Job-specific CV preview + web builder funnel |
 | `/pricing` | Free vs Premium |
 | `/blog` | UK CV & resume SEO articles |
@@ -62,7 +62,7 @@ NEXT_PUBLIC_SUPPORT_EMAIL=mwk.pkx@gmail.com
 
 - Auto-generated `sitemap.xml`, `robots.txt`, and `_redirects` on build
 - JSON-LD: SoftwareApplication, FAQ, Video, BlogPosting, BreadcrumbList
-- 14 job-intent CV funnel pages with analytics events
+- 26 job-intent CV funnel pages with analytics events
 
 ## Scripts
 

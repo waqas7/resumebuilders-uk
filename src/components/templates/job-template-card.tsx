@@ -1,8 +1,14 @@
 import Link from "next/link";
 import { JobCvPreview } from "@/components/templates/job-cv-preview";
+import { LazyCvPreview } from "@/components/templates/lazy-cv-preview";
 import type { JobTemplatePage } from "@/lib/job-template-pages";
 
-export function JobTemplateCard({ page }: { page: JobTemplatePage }) {
+type JobTemplateCardProps = {
+  page: JobTemplatePage;
+  lazyPreview?: boolean;
+};
+
+export function JobTemplateCard({ page, lazyPreview = false }: JobTemplateCardProps) {
   return (
     <article className="group flex h-full flex-col overflow-hidden rounded-2xl border border-border bg-card transition hover:border-violet-500/40 hover:shadow-lg hover:shadow-violet-500/5">
       <div className="bg-gradient-to-br from-violet-500/5 to-blue-500/5 p-3">
@@ -11,7 +17,11 @@ export function JobTemplateCard({ page }: { page: JobTemplatePage }) {
           role="img"
           aria-label={`${page.builderLabel} CV preview`}
         >
-          <JobCvPreview data={page.cvData} highlightSections size="card" />
+          {lazyPreview ? (
+            <LazyCvPreview data={page.cvData} label={page.builderLabel} />
+          ) : (
+            <JobCvPreview data={page.cvData} highlightSections size="card" />
+          )}
         </div>
       </div>
       <Link

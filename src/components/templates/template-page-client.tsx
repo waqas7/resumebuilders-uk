@@ -13,17 +13,18 @@ import {
 import { RelatedTemplates } from "@/components/templates/related-templates";
 import { TemplateStickyCta } from "@/components/templates/template-sticky-cta";
 import {
-  trackAppInstallClick,
   trackTemplatePageView,
 } from "@/lib/analytics";
+import { getBlogLinkForTemplate, type TemplateBlogLink } from "@/lib/template-blog-links";
 import type { JobTemplatePage } from "@/lib/job-template-pages";
 
 type TemplatePageClientProps = {
   page: JobTemplatePage;
   related: JobTemplatePage[];
+  blogLink?: TemplateBlogLink;
 };
 
-export function TemplatePageClient({ page, related }: TemplatePageClientProps) {
+export function TemplatePageClient({ page, related, blogLink }: TemplatePageClientProps) {
   const [startBuilder, setStartBuilder] = useState(false);
 
   useEffect(() => {
@@ -101,6 +102,19 @@ export function TemplatePageClient({ page, related }: TemplatePageClientProps) {
               </li>
             ))}
           </ul>
+          {blogLink && (
+            <div className="mt-8 rounded-xl border border-border bg-card p-5">
+              <p className="text-sm font-medium text-muted-foreground">
+                Related guide
+              </p>
+              <Link
+                href={`/blog/${blogLink.slug}`}
+                className="mt-2 inline-block font-semibold text-violet-600 hover:underline dark:text-violet-400"
+              >
+                {blogLink.title} →
+              </Link>
+            </div>
+          )}
         </Container>
       </Section>
 
@@ -128,11 +142,10 @@ export function TemplatePageClient({ page, related }: TemplatePageClientProps) {
             <div className="mt-8">
               <PlayStoreButton
                 className="bg-white text-violet-700 hover:bg-white/90"
-                onClick={() =>
-                  trackAppInstallClick("conversion_section", page.slug)
-                }
+                ctaSource="template_conversion_section"
+                templateSlug={page.slug}
               >
-                Download App to Continue
+                Get the Android App — Export PDF Free
               </PlayStoreButton>
             </div>
           </div>

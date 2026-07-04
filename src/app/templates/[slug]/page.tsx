@@ -9,6 +9,7 @@ import {
   getJobTemplatePage,
   getRelatedTemplates,
 } from "@/lib/job-template-pages";
+import { getBlogLinkForTemplate } from "@/lib/template-blog-links";
 import { KEYWORDS } from "@/lib/constants";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -36,6 +37,7 @@ export default async function JobTemplatePage({ params }: Props) {
   if (!page) notFound();
 
   const related = getRelatedTemplates(page.relatedSlugs);
+  const blogLink = getBlogLinkForTemplate(slug);
 
   return (
     <>
@@ -46,7 +48,7 @@ export default async function JobTemplatePage({ params }: Props) {
           { name: page.h1, path: `/templates/${slug}` },
         ])}
       />
-      <TemplatePageClient page={page} related={related} />
+      <TemplatePageClient page={page} related={related} blogLink={blogLink} />
     </>
   );
 }

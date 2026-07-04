@@ -10,9 +10,9 @@ import {
 import { KEYWORDS, RESUME_BUILDER_FAQS } from "@/lib/constants";
 
 export const metadata: Metadata = buildMetadata({
-  title: "Best Resume Maker App UK — Free CV Builder with Templates & AI",
+  title: "Free CV Maker App UK — ATS Templates & PDF Export (Android)",
   description:
-    "Download the best free resume maker app for UK jobs. ATS-friendly templates, CV examples, AI builder, offline mode, PDF export, and ATS score checker — ideal for freshers.",
+    "Free CV maker app for UK jobs on Android. ATS-friendly templates, 26 job CV examples, offline mode, PDF export, and ATS score checker. Download free on Google Play.",
   path: "/",
   keywords: KEYWORDS,
 });

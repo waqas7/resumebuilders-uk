@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
-import { IMAGES, KEYWORDS, SITE_URL } from "./constants";
+import { KEYWORDS, SITE_URL } from "./constants";
 import { BRAND } from "./projects";
+import { getOgImageForPath } from "./og-images";
 
 export const sharedMetadata: Pick<Metadata, "metadataBase" | "icons" | "manifest"> = {
   metadataBase: new URL(SITE_URL),
@@ -33,8 +34,8 @@ export function buildMetadata({
   description,
   path,
   keywords = KEYWORDS,
-  ogImage = path === "/" ? BRAND.ogImage : IMAGES.ogDefault,
-  ogImageAlt = path === "/" ? BRAND.ogImageAlt : IMAGES.ogAlt,
+  ogImage,
+  ogImageAlt,
   robots = { index: true, follow: true },
   type = "website",
   publishedTime,
@@ -44,6 +45,10 @@ export function buildMetadata({
     path === "/"
       ? title
       : `${title} | ${BRAND.name}`;
+
+  const og = ogImage
+    ? { url: ogImage, alt: ogImageAlt ?? description }
+    : getOgImageForPath(path);
 
   return {
     ...sharedMetadata,
@@ -58,7 +63,7 @@ export function buildMetadata({
       title: fullTitle,
       description,
       siteName: BRAND.name,
-      images: [{ url: ogImage, width: 1200, height: 630, alt: ogImageAlt }],
+      images: [{ url: og.url, width: 1200, height: 630, alt: og.alt }],
       ...(type === "article" && publishedTime
         ? { publishedTime, authors: [BRAND.name] }
         : {}),
@@ -67,7 +72,7 @@ export function buildMetadata({
       card: "summary_large_image",
       title: fullTitle,
       description,
-      images: [ogImage],
+      images: [og.url],
     },
     robots,
   };

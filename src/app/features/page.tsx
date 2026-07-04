@@ -69,7 +69,9 @@ export default function FeaturesPage() {
                   ))}
                 </ul>
                 <div className="mt-8">
-                  <PlayStoreButton>Try It Free on Android</PlayStoreButton>
+                  <PlayStoreButton ctaSource="features_page">
+                    Try It Free on Android
+                  </PlayStoreButton>
                 </div>
               </div>
               <AppScreenshot

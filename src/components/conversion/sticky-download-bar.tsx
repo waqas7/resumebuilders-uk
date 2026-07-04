@@ -22,7 +22,7 @@ export function StickyDownloadBar() {
           <p className="truncate text-sm font-semibold">Resume Builder App</p>
           <p className="text-xs text-muted-foreground">Free on Google Play</p>
         </div>
-        <PlayStoreBadge size="sm" />
+        <PlayStoreBadge size="sm" ctaSource="global_sticky_bar" />
       </div>
     </div>
   );

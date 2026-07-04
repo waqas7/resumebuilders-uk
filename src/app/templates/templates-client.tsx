@@ -10,7 +10,7 @@ export default function TemplatesPageClient() {
     <>
       <Section className="pt-16">
         <Container>
-          <Badge className="mb-4">14 UK CV Examples</Badge>
+          <Badge className="mb-4">{JOB_TEMPLATE_PAGES.length} UK CV Examples</Badge>
           <h1 className="text-4xl font-bold md:text-5xl">
             CV Templates & Examples for Every UK Job
           </h1>
@@ -47,7 +47,9 @@ export default function TemplatesPageClient() {
               .
             </p>
             <div className="mt-6">
-              <PlayStoreButton>Use Templates Free</PlayStoreButton>
+              <PlayStoreButton ctaSource="templates_index">
+                Use Templates Free
+              </PlayStoreButton>
             </div>
           </div>
         </Container>

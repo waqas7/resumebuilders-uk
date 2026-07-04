@@ -110,7 +110,7 @@ export default function ContactPage() {
 
       <Section className="pt-0">
         <Container className="text-center">
-          <PlayStoreButton>Download the App</PlayStoreButton>
+          <PlayStoreButton ctaSource="contact_page">Download the App</PlayStoreButton>
         </Container>
       </Section>
     </>

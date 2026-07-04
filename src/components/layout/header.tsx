@@ -41,7 +41,7 @@ export function Header() {
 
         <div className="flex items-center gap-2">
           <ThemeToggle />
-          <PlayStoreButton className="hidden px-4 py-2 text-sm sm:inline-flex">
+          <PlayStoreButton ctaSource="header" className="hidden px-4 py-2 text-sm sm:inline-flex">
             Download
           </PlayStoreButton>
           <MobileNav />

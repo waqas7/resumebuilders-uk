@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from "react";
 import { PlayStoreBadge } from "@/components/conversion/play-store-badge";
-import { trackAppInstallClick } from "@/lib/analytics";
 
 export function TemplateStickyCta({ slug }: { slug: string }) {
   const [visible, setVisible] = useState(false);
@@ -27,7 +26,8 @@ export function TemplateStickyCta({ slug }: { slug: string }) {
         </div>
         <PlayStoreBadge
           size="sm"
-          onClick={() => trackAppInstallClick("template_sticky_bar", slug)}
+          ctaSource="template_sticky_bar"
+          templateSlug={slug}
         />
       </div>
     </div>

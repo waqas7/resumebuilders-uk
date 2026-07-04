@@ -5,7 +5,7 @@ import { buildMetadata } from "@/lib/seo";
 import { Container, Section } from "@/components/ui/button";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getBlogPostingSchema, getBreadcrumbSchema } from "@/lib/schema";
-import { getAllSlugs, getPostBySlug, getAllPosts } from "@/lib/blog";
+import { getAllSlugs, getPostBySlug, getRelatedPosts } from "@/lib/blog";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -33,8 +33,7 @@ export default async function BlogPostPage({ params }: Props) {
   const post = await getPostBySlug(slug);
   if (!post) notFound();
 
-  const allPosts = getAllPosts();
-  const related = allPosts.filter((p) => p.slug !== slug).slice(0, 2);
+  const related = getRelatedPosts(slug, 3);
 
   return (
     <>

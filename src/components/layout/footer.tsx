@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { BRAND, NAV_LINKS } from "@/lib/projects";
-import { PLAY_STORE_URL, SUPPORT_EMAIL } from "@/lib/constants";
+import { SUPPORT_EMAIL } from "@/lib/constants";
+import { FEATURED_BLOG_LINKS, getPlayStoreUrl } from "@/lib/play-store-url";
 import { Container } from "@/components/ui/button";
 import { PlayStoreButton } from "@/components/conversion/play-store-badge";
 
@@ -13,10 +14,12 @@ const TEMPLATE_LINKS = [
 ] as const;
 
 export function Footer() {
+  const playStoreHref = getPlayStoreUrl({ source: "footer_text_link" });
+
   return (
     <footer className="border-t border-border bg-muted/30 py-16">
       <Container>
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-5">
           <div className="sm:col-span-2 lg:col-span-1">
             <Link href="/" className="flex items-center gap-2.5">
               <Image
@@ -32,7 +35,7 @@ export function Footer() {
               {BRAND.description}
             </p>
             <div className="mt-6">
-              <PlayStoreButton className="px-5 py-2.5 text-sm">
+              <PlayStoreButton ctaSource="footer_button" className="px-5 py-2.5 text-sm">
                 Get the app
               </PlayStoreButton>
             </div>
@@ -70,6 +73,24 @@ export function Footer() {
           </div>
 
           <div>
+            <h3 className="font-semibold">CV guides</h3>
+            <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
+              {FEATURED_BLOG_LINKS.map((link) => (
+                <li key={link.href}>
+                  <Link href={link.href} className="hover:text-foreground">
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+              <li>
+                <Link href="/blog" className="font-medium hover:text-foreground">
+                  All blog articles →
+                </Link>
+              </li>
+            </ul>
+          </div>
+
+          <div>
             <h3 className="font-semibold">Support</h3>
             <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
               <li>
@@ -82,7 +103,7 @@ export function Footer() {
               </li>
               <li>
                 <a
-                  href={PLAY_STORE_URL}
+                  href={playStoreHref}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="hover:text-foreground"

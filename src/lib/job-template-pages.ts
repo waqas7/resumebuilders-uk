@@ -1,38 +1,11 @@
-import type { ResumePreviewVariant } from "@/components/marketing/mockups/resume-preview";
+import { EXTRA_JOB_TEMPLATE_PAGES } from "./job-template-pages-extra";
 
-export type CvExperience = {
-  role: string;
-  company: string;
-  period: string;
-  bullets: string[];
-};
-
-export type JobCvData = {
-  name: string;
-  title: string;
-  email: string;
-  phone: string;
-  location: string;
-  summary: string;
-  skills: string[];
-  experience: CvExperience[];
-  education: string;
-};
-
-export type JobTemplatePage = {
-  slug: string;
-  h1: string;
-  heroHeadline: string;
-  heroSubtext: string;
-  metaTitle: string;
-  metaDescription: string;
-  keywords: string[];
-  previewVariant: ResumePreviewVariant;
-  cvData: JobCvData;
-  whyItWorks: string[];
-  relatedSlugs: string[];
-  builderLabel: string;
-};
+export type {
+  CvExperience,
+  JobCvData,
+  JobTemplatePage,
+} from "./job-template-page-types";
+import type { JobTemplatePage } from "./job-template-page-types";
 
 export const JOB_TEMPLATE_PAGES: JobTemplatePage[] = [
   {
@@ -1115,6 +1088,7 @@ export const JOB_TEMPLATE_PAGES: JobTemplatePage[] = [
         "NVQ Level 2 Health & Social Care — Nottingham College, 2020\nEnhanced DBS (Update Service) · Moving & Handling Certificate · Medication Administration Training",
     },
   },
+  ...EXTRA_JOB_TEMPLATE_PAGES,
 ];
 
 const pageMap = new Map(JOB_TEMPLATE_PAGES.map((p) => [p.slug, p]));

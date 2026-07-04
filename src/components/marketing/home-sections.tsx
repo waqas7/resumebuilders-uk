@@ -12,6 +12,10 @@ import {
   TRUST,
 } from "@/lib/constants";
 import { JOB_TEMPLATE_PAGES } from "@/lib/job-template-pages";
+import {
+  FEATURED_BLOG_LINKS,
+  HOMEPAGE_FEATURED_TEMPLATE_SLUGS,
+} from "@/lib/play-store-url";
 import { AppScreenshot } from "@/components/marketing/app-screenshot";
 import { YouTubeShortEmbed } from "@/components/marketing/youtube-short-embed";
 import { RESUME_BUILDER_YOUTUBE_SHORT } from "@/lib/constants";
@@ -29,14 +33,13 @@ export function HeroSection() {
           <div>
             <Badge className="mb-6">Best Free Resume Maker App for Android</Badge>
             <h1 className="text-4xl font-bold tracking-tight md:text-5xl lg:text-6xl">
-              Free Resume Maker &{" "}
-              <span className="gradient-text">CV Maker App</span>
+              Free CV Maker App for UK Jobs —{" "}
+              <span className="gradient-text">ATS Templates & PDF Export</span>
             </h1>
             <p className="mt-6 text-lg text-muted-foreground md:text-xl">
-              The easy CV builder app for beginners and freshers. Create
-              ATS-friendly resumes offline with 20+ templates, AI resume
-              builder tools, PDF download, cover letters, and an ATS score
-              checker — free on Google Play.
+              Download the free CV maker app for Android. Build ATS-friendly UK
+              CVs with 26 job templates, offline mode, PDF export, and an ATS
+              score checker — ideal for freshers and career changers.
             </p>
 
             <div className="mt-4 flex flex-wrap items-center gap-4 text-sm text-muted-foreground">
@@ -51,8 +54,10 @@ export function HeroSection() {
             </div>
 
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <PlayStoreBadge size="lg" />
-              <PlayStoreButton>Download Free</PlayStoreButton>
+              <PlayStoreBadge size="lg" ctaSource="homepage_hero_badge" />
+              <PlayStoreButton ctaSource="homepage_hero_button">
+                Download Free
+              </PlayStoreButton>
             </div>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -113,7 +118,9 @@ export function VideoDemoSection() {
               ))}
             </ul>
             <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-center">
-              <PlayStoreButton>Download Now</PlayStoreButton>
+              <PlayStoreButton ctaSource="homepage_video_demo">
+                Download Now
+              </PlayStoreButton>
               <a
                 href={RESUME_BUILDER_YOUTUBE_SHORT.watchUrl}
                 target="_blank"
@@ -131,6 +138,11 @@ export function VideoDemoSection() {
 }
 
 export function JobTemplatesPreviewSection() {
+  const featuredSet = new Set<string>(HOMEPAGE_FEATURED_TEMPLATE_SLUGS);
+  const featuredPages = JOB_TEMPLATE_PAGES.filter((page) =>
+    featuredSet.has(page.slug)
+  );
+
   return (
     <Section className="bg-muted/30">
       <Container>
@@ -140,26 +152,71 @@ export function JobTemplatesPreviewSection() {
             <span className="gradient-text">Job & Intent</span>
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
-            Real CV templates for retail, care home, admin, students, career changers, and
-            more. Preview the full layout, start building free, and export PDF
-            in the app.
+            Featured CV templates for retail, care home, NHS, students, and
+            more. Preview the layout, start building free, and export PDF in
+            the app.
           </p>
         </div>
 
         <ul className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {JOB_TEMPLATE_PAGES.map((page) => (
+          {featuredPages.map((page) => (
             <li key={page.slug}>
-              <JobTemplateCard page={page} />
+              <JobTemplateCard page={page} lazyPreview />
             </li>
           ))}
         </ul>
 
-        <div className="mt-10 text-center">
+        <div className="mt-10 flex flex-col items-center gap-3 text-center">
           <Link
             href="/templates"
             className="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-400"
           >
-            View all CV templates →
+            View all {JOB_TEMPLATE_PAGES.length} CV templates →
+          </Link>
+          <Link
+            href="/blog"
+            className="text-sm text-muted-foreground hover:text-foreground"
+          >
+            Read our UK CV & resume guides →
+          </Link>
+        </div>
+      </Container>
+    </Section>
+  );
+}
+
+export function BlogGuidesSection() {
+  return (
+    <Section>
+      <Container>
+        <div className="text-center">
+          <h2 className="text-3xl font-bold md:text-4xl">UK CV & Resume Guides</h2>
+          <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
+            Expert advice on ATS formatting, personal statements, and job-specific
+            applications — free on our blog.
+          </p>
+        </div>
+        <ul className="mt-10 grid gap-4 sm:grid-cols-3">
+          {FEATURED_BLOG_LINKS.map((post) => (
+            <li key={post.href}>
+              <Link
+                href={post.href}
+                className="block rounded-xl border border-border bg-card p-5 transition hover:border-violet-500/40 hover:shadow-md"
+              >
+                <span className="font-semibold text-foreground">{post.label}</span>
+                <span className="mt-2 block text-sm text-violet-600 dark:text-violet-400">
+                  Read guide →
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+        <div className="mt-8 text-center">
+          <Link
+            href="/blog"
+            className="text-sm font-semibold text-violet-600 hover:underline dark:text-violet-400"
+          >
+            View all blog articles →
           </Link>
         </div>
       </Container>
@@ -196,7 +253,9 @@ export function ATSScoreSection() {
               ))}
             </ul>
             <div className="mt-8">
-              <PlayStoreButton>Check Your ATS Score Free</PlayStoreButton>
+              <PlayStoreButton ctaSource="homepage_ats_section">
+                Check Your ATS Score Free
+              </PlayStoreButton>
             </div>
           </div>
           <AppScreenshot
@@ -242,7 +301,9 @@ export function LandDreamJobSection() {
               ))}
             </ul>
             <div className="mt-8">
-              <PlayStoreButton>Get the Android App</PlayStoreButton>
+              <PlayStoreButton ctaSource="homepage_land_dream_job">
+                Get the Android App
+              </PlayStoreButton>
             </div>
           </div>
         </div>
@@ -283,7 +344,9 @@ export function AppShowcaseSection() {
               ))}
             </ul>
             <div className="mt-8">
-              <PlayStoreButton>Start Building Free</PlayStoreButton>
+              <PlayStoreButton ctaSource="homepage_app_showcase">
+                Start Building Free
+              </PlayStoreButton>
             </div>
           </div>
         </div>
@@ -382,6 +445,7 @@ export function HomePageContent() {
       <HeroSection />
       <VideoDemoSection />
       <JobTemplatesPreviewSection />
+      <BlogGuidesSection />
       <ATSScoreSection />
       <CtaSection variant="primary" />
       <LandDreamJobSection />
