@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f8fafc"/>
+  <text x="600" y="100" fill="#1e293b" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="44" font-weight="800">Manage All Your Resumes</text>
+  <text x="600" y="150" fill="#2563EB" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20">Edit · Duplicate · Rename · Change Template</text>
+  <rect x="420" y="200" width="360" height="600" rx="32" fill="#111827" opacity="0.1"/>
+  <rect x="450" y="260" width="300" height="100" rx="12" fill="white" stroke="#e2e8f0"/>
+  <rect x="450" y="380" width="300" height="100" rx="12" fill="white" stroke="#e2e8f0"/>
+</svg>

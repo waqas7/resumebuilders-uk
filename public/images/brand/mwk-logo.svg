@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="MWK Technologies">
+  <rect width="512" height="512" rx="96" fill="#0a0a0a"/>
+  <path fill="#ffffff" d="M128 320V192l64 96 64-96 64 96 64-96v128h-48V248l-48 72-48-72v72h-48zm224 0V192h48v128h-48z"/>
+  <text x="256" y="420" fill="#ffffff" font-family="system-ui,sans-serif" font-size="72" font-weight="800" text-anchor="middle">MWK</text>
+</svg>

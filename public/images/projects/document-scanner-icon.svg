@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Document Scanner">
+  <defs>
+    <linearGradient id="ds" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0ea5e9"/>
+      <stop offset="100%" stop-color="#4f46e5"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#ds)"/>
+  <rect x="128" y="96" width="256" height="320" rx="16" fill="#fff" opacity=".95"/>
+  <rect x="168" y="156" width="176" height="12" rx="6" fill="#cbd5e1"/>
+  <rect x="168" y="196" width="176" height="12" rx="6" fill="#cbd5e1"/>
+  <rect x="168" y="236" width="120" height="12" rx="6" fill="#cbd5e1"/>
+  <circle cx="320" cy="360" r="56" fill="#fff"/>
+  <path fill="#0ea5e9" d="M320 328v32h32l-48 48-48-48h32v-32h32z"/>
+</svg>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Chat Meme">
+  <defs>
+    <linearGradient id="cm" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#0d9488"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#cm)"/>
+  <rect x="96" y="140" width="220" height="72" rx="24" fill="#fff" opacity=".95"/>
+  <rect x="196" y="240" width="220" height="72" rx="24" fill="#dcf8c6" opacity=".95"/>
+  <rect x="96" y="340" width="180" height="72" rx="24" fill="#fff" opacity=".95"/>
+</svg>

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#faf5ff"/>
+  <text x="600" y="100" fill="#1e293b" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="44" font-weight="800">20+ Stunning Templates</text>
+  <text x="600" y="150" fill="#7c3aed" text-anchor="middle" font-family="Inter,Arial,sans-serif" font-size="20">Modern · Minimal · Professional · Creative</text>
+  <rect x="380" y="220" width="440" height="580" rx="32" fill="#111827" opacity="0.1"/>
+  <rect x="410" y="260" width="180" height="220" rx="12" fill="white" stroke="#e9d5ff"/>
+  <rect x="610" y="260" width="180" height="220" rx="12" fill="white" stroke="#e9d5ff"/>
+  <rect x="410" y="500" width="180" height="220" rx="12" fill="#1e293b"/>
+  <rect x="610" y="500" width="180" height="220" rx="12" fill="white" stroke="#e9d5ff"/>
+</svg>

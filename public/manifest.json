@@ -1,0 +1,21 @@
+{
+  "name": "Resume Builders UK",
+  "short_name": "CV Builder",
+  "description": "Free UK CV maker app with ATS-friendly templates and PDF export.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#7c3aed",
+  "icons": [
+    {
+      "src": "/images/resume-builder-app-icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/images/resume-builder-app-icon-512.webp",
+      "sizes": "512x512",
+      "type": "image/webp"
+    }
+  ]
+}

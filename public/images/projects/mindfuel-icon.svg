@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="MindFuel">
+  <defs>
+    <linearGradient id="mf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#ea580c"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#mf)"/>
+  <path fill="#fff" d="M256 120c-66 0-120 54-120 120 0 66 54 120 120 120s120-54 120-120c0-66-54-120-120-120zm0 48c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72z" opacity=".25"/>
+  <text x="256" y="300" fill="#fff" font-family="Georgia,serif" font-size="120" font-style="italic" text-anchor="middle">&</text>
+</svg>

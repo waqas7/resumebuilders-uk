@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563EB"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#bg)"/>
+  <text x="80" y="120" fill="white" font-family="Inter,Arial,sans-serif" font-size="56" font-weight="800">Build Your Resume in Minutes</text>
+  <text x="80" y="180" fill="white" opacity="0.85" font-family="Inter,Arial,sans-serif" font-size="24">20+ Templates · PDF Export · 100% Free · Offline</text>
+  <rect x="520" y="220" width="180" height="360" rx="24" fill="#111827" opacity="0.35"/>
+  <rect x="620" y="180" width="200" height="400" rx="24" fill="#111827" opacity="0.5"/>
+  <rect x="740" y="240" width="180" height="360" rx="24" fill="#111827" opacity="0.35"/>
+  <rect x="550" y="260" width="140" height="280" rx="12" fill="white"/>
+  <rect x="650" y="220" width="140" height="300" rx="12" fill="white"/>
+  <rect x="770" y="280" width="120" height="260" rx="12" fill="white"/>
+</svg>
