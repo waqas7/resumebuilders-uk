@@ -23,6 +23,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     description: post.description,
     path: `/blog/${slug}`,
     keywords: post.keywords,
+    type: "article",
+    publishedTime: post.date,
   });
 }
 
@@ -63,7 +65,7 @@ export default async function BlogPostPage({ params }: Props) {
               dateTime={post.date}
               className="mt-4 block text-sm text-muted-foreground"
             >
-              {new Date(post.date).toLocaleDateString("en-US", {
+              {new Date(post.date).toLocaleDateString("en-GB", {
                 year: "numeric",
                 month: "long",
                 day: "numeric",

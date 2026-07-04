@@ -8,8 +8,8 @@ import { StickyDownloadBar } from "@/components/conversion/sticky-download-bar";
 import { GoogleAnalytics } from "@/components/seo/google-analytics";
 import { JsonLd } from "@/components/seo/json-ld";
 import { getOrganizationSchema, getWebSiteSchema } from "@/lib/schema";
-import { buildMetadata } from "@/lib/seo";
-import { KEYWORDS } from "@/lib/constants";
+import { sharedMetadata } from "@/lib/seo";
+import { BRAND } from "@/lib/projects";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -17,14 +17,14 @@ const inter = Inter({
   display: "swap",
 });
 
-export const metadata: Metadata = buildMetadata({
-  title:
-    "Resume Builders UK — Free CV Maker App with ATS Templates & PDF Export",
-  description:
-    "Build ATS-friendly UK CVs free on Android. 20+ templates, guided builder, CV examples by job, and one-tap PDF export. Download the resume maker app on Google Play.",
-  path: "/",
-  keywords: KEYWORDS,
-});
+export const metadata: Metadata = {
+  ...sharedMetadata,
+  title: {
+    default: BRAND.name,
+    template: `%s | ${BRAND.name}`,
+  },
+  description: BRAND.description,
+};
 
 export default function RootLayout({
   children,

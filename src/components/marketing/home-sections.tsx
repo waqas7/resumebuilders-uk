@@ -8,6 +8,7 @@ import { JobTemplateCard } from "@/components/templates/job-template-card";
 import {
   IMAGES,
   REVIEWS,
+  RESUME_BUILDER_FAQS,
   TRUST,
 } from "@/lib/constants";
 import { JOB_TEMPLATE_PAGES } from "@/lib/job-template-pages";
@@ -349,6 +350,32 @@ export function SocialProofSection() {
   );
 }
 
+export function FaqSection() {
+  return (
+    <Section className="border-y border-border bg-muted/20">
+      <Container>
+        <div className="mx-auto max-w-3xl text-center">
+          <h2 className="text-3xl font-bold md:text-4xl">
+            Frequently Asked Questions
+          </h2>
+          <p className="mt-4 text-lg text-muted-foreground">
+            Everything you need to know about our free resume maker and CV
+            builder app for Android.
+          </p>
+        </div>
+        <div className="mx-auto mt-10 max-w-3xl space-y-4">
+          {RESUME_BUILDER_FAQS.map((faq) => (
+            <div key={faq.question} className="rounded-xl border border-border bg-card p-6">
+              <h3 className="font-semibold">{faq.question}</h3>
+              <p className="mt-2 text-sm text-muted-foreground">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
+      </Container>
+    </Section>
+  );
+}
+
 export function HomePageContent() {
   return (
     <>
@@ -360,6 +387,7 @@ export function HomePageContent() {
       <LandDreamJobSection />
       <AppShowcaseSection />
       <SocialProofSection />
+      <FaqSection />
       <CtaSection variant="secondary" />
       <CtaSection variant="urgency" buttonText="Upgrade Now" />
     </>

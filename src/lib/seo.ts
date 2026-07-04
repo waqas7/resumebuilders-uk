@@ -2,6 +2,20 @@ import type { Metadata } from "next";
 import { IMAGES, KEYWORDS, SITE_URL } from "./constants";
 import { BRAND } from "./projects";
 
+export const sharedMetadata: Pick<Metadata, "metadataBase" | "icons" | "manifest"> = {
+  metadataBase: new URL(SITE_URL),
+  icons: {
+    icon: [
+      { url: "/images/resume-builder-app-icon-192.png", sizes: "192x192", type: "image/png" },
+      { url: "/images/resume-builder-app-icon-512.webp", sizes: "512x512", type: "image/webp" },
+    ],
+    apple: [
+      { url: "/images/resume-builder-app-icon-192.png", sizes: "192x192", type: "image/png" },
+    ],
+  },
+  manifest: "/manifest.json",
+};
+
 type PageMeta = {
   title: string;
   description: string;
@@ -10,6 +24,8 @@ type PageMeta = {
   ogImage?: string;
   ogImageAlt?: string;
   robots?: Metadata["robots"];
+  type?: "website" | "article";
+  publishedTime?: string;
 };
 
 export function buildMetadata({
@@ -20,6 +36,8 @@ export function buildMetadata({
   ogImage = path === "/" ? BRAND.ogImage : IMAGES.ogDefault,
   ogImageAlt = path === "/" ? BRAND.ogImageAlt : IMAGES.ogAlt,
   robots = { index: true, follow: true },
+  type = "website",
+  publishedTime,
 }: PageMeta): Metadata {
   const url = `${SITE_URL}${path}`;
   const fullTitle =
@@ -28,19 +46,22 @@ export function buildMetadata({
       : `${title} | ${BRAND.name}`;
 
   return {
+    ...sharedMetadata,
     title: fullTitle,
     description,
     keywords: keywords.join(", "),
-    metadataBase: new URL(SITE_URL),
     alternates: { canonical: url },
     openGraph: {
-      type: "website",
+      type,
       locale: "en_GB",
       url,
       title: fullTitle,
       description,
       siteName: BRAND.name,
       images: [{ url: ogImage, width: 1200, height: 630, alt: ogImageAlt }],
+      ...(type === "article" && publishedTime
+        ? { publishedTime, authors: [BRAND.name] }
+        : {}),
     },
     twitter: {
       card: "summary_large_image",
@@ -49,15 +70,5 @@ export function buildMetadata({
       images: [ogImage],
     },
     robots,
-    icons: {
-      icon: [
-        { url: "/images/resume-builder-app-icon-192.png", sizes: "192x192", type: "image/png" },
-        { url: "/images/resume-builder-app-icon-512.webp", sizes: "512x512", type: "image/webp" },
-      ],
-      apple: [
-        { url: "/images/resume-builder-app-icon-192.png", sizes: "192x192", type: "image/png" },
-      ],
-    },
-    manifest: "/manifest.json",
   };
 }

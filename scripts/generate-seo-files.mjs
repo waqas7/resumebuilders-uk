@@ -4,22 +4,13 @@ import path from "path";
 const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ?? "https://resumebuilders.uk";
 
-const JOB_TEMPLATE_SLUGS = [
-  "retail-assistant-cv-uk",
-  "warehouse-worker-cv-uk",
-  "student-cv-no-experience",
-  "ats-friendly-cv-template",
-  "career-change-cv-uk",
-  "customer-service-cv-uk",
-  "admin-assistant-cv-uk",
-  "sales-associate-cv-uk",
-  "receptionist-cv-uk",
-  "simple-cv-template-interviews",
-  "professional-cv-format-uk-2026",
-  "international-student-cv-uk",
-  "career-change-cv-no-experience",
-  "cv-after-career-break-uk",
-];
+function getJobTemplateSlugs() {
+  const filePath = path.join(process.cwd(), "src/lib/job-template-pages.ts");
+  if (!fs.existsSync(filePath)) return [];
+
+  const content = fs.readFileSync(filePath, "utf8");
+  return [...content.matchAll(/^\s+slug:\s*"([^"]+)"/gm)].map((match) => match[1]);
+}
 
 const STATIC_ROUTES = [
   "",
@@ -73,7 +64,7 @@ function buildSitemapXml() {
       changefreq: "monthly",
       priority: 0.7,
     })),
-    ...JOB_TEMPLATE_SLUGS.map((slug) => ({
+    ...getJobTemplateSlugs().map((slug) => ({
       loc: `${SITE_URL}/templates/${slug}`,
       lastmod,
       changefreq: "weekly",

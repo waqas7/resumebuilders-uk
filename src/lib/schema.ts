@@ -80,13 +80,21 @@ export function getBlogPostingSchema(post: {
   date: string;
   slug: string;
 }) {
+  const url = `${SITE_URL}/blog/${post.slug}`;
+
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     headline: post.title,
     description: post.description,
     datePublished: post.date,
-    url: `${SITE_URL}/blog/${post.slug}`,
+    dateModified: post.date,
+    url,
+    mainEntityOfPage: {
+      "@type": "WebPage",
+      "@id": url,
+    },
+    image: `${SITE_URL}${IMAGES.ogDefault}`,
     author: {
       "@type": "Organization",
       name: BRAND.name,
