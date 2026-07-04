@@ -69,22 +69,9 @@ export function TemplatePageClient({ page, related, blogLink }: TemplatePageClie
               </div>
             </div>
 
-            <div className="overflow-hidden rounded-xl border border-border shadow-xl lg:max-h-[520px] lg:overflow-y-auto">
+            <div className="overflow-hidden rounded-xl border border-border shadow-xl lg:max-h-[min(70vh,640px)] lg:overflow-y-auto">
               <JobCvPreview data={page.cvData} highlightSections />
             </div>
-          </div>
-        </Container>
-      </Section>
-
-      <Section className="border-y border-border bg-muted/20 py-12">
-        <Container>
-          <h2 className="text-2xl font-bold md:text-3xl">Full CV Preview</h2>
-          <p className="mt-2 max-w-2xl text-muted-foreground">
-            Scroll through the complete layout — Experience, Skills, and
-            Education sections recruiters expect on UK applications.
-          </p>
-          <div className="mt-8 max-h-[min(70vh,640px)] overflow-y-auto rounded-xl border border-border shadow-lg">
-            <JobCvPreview data={page.cvData} highlightSections />
           </div>
         </Container>
       </Section>
