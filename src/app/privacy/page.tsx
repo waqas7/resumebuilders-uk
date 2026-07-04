@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { buildMetadata } from "@/lib/seo";
 import { Container, Section } from "@/components/ui/button";
-import { SUPPORT_EMAIL } from "@/lib/constants";
+import { SITE_URL, SUPPORT_EMAIL } from "@/lib/constants";
 import { BRAND } from "@/lib/projects";
 
 export const metadata: Metadata = buildMetadata({
@@ -25,7 +25,7 @@ export default function PrivacyPage() {
         <div className="prose prose-zinc mt-10 max-w-none dark:prose-invert">
           <h2>Who we are</h2>
           <p>
-            {BRAND.name} ({BRAND.name.toLowerCase().replace(/\s/g, "")}.uk)
+            {BRAND.name} ({new URL(SITE_URL).hostname})
             provides information about our Android CV maker app and free UK CV
             templates on this website.
           </p>
