@@ -1,0 +1,51 @@
+{
+  "id": "customer-service-cv-uk",
+  "slug": "customer-service-cv-uk",
+  "title": "Customer Service CV Example UK — Get More Interviews",
+  "builderLabel": "Customer Service",
+  "previewVariant": "ats-standard",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Jordan Blake",
+    "title": "Customer Service Advisor",
+    "email": "jordan.blake@email.co.uk",
+    "phone": "+44 7700 901111",
+    "location": "Glasgow, UK",
+    "summary": "Customer-focused advisor with 4 years in UK call centre and retail support environments. Skilled in complaint resolution, CRM systems, and delivering 90%+ satisfaction scores while meeting SLA targets on busy shifts.",
+    "skills": [
+      "Complaint Resolution",
+      "Zendesk / CRM",
+      "Active Listening",
+      "SLA Management",
+      "Live Chat & Email",
+      "Upselling & Retention"
+    ],
+    "experience": [
+      {
+        "role": "Customer Service Advisor",
+        "company": "ConnectUK Telecom",
+        "period": "2022 – Present",
+        "bullets": [
+          "Maintained 92% first-contact resolution across 60+ daily inbound calls",
+          "Reduced average handle time by 18% while improving CSAT to 4.7/5",
+          "Mentored 4 new advisors on de-escalation scripts and CRM workflows"
+        ]
+      },
+      {
+        "role": "Customer Support Agent",
+        "company": "ShopDirect Online",
+        "period": "2020 – 2022",
+        "bullets": [
+          "Handled order queries and refunds via live chat with 95% positive feedback",
+          "Logged and escalated complex cases accurately in Zendesk"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "NVQ Level 2 Customer Service",
+      "institution": "City of Glasgow College",
+      "year": "2020",
+      "raw": "NVQ Level 2 Customer Service — City of Glasgow College, 2020"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "career-change-cv-no-experience",
+  "slug": "career-change-cv-no-experience",
+  "title": "CV for Career Change (No Experience in New Field)",
+  "builderLabel": "Career Pivot",
+  "previewVariant": "professional-classic",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Michael Osei",
+    "title": "Aspiring Digital Marketing Assistant",
+    "email": "michael.osei@email.co.uk",
+    "phone": "+44 7700 901888",
+    "location": "Cardiff, UK",
+    "summary": "Former secondary school teacher transitioning into digital marketing. No agency experience yet — but 5 years creating engaging content, analysing engagement data, and managing projects. Completed Google Digital Garage and built 3 live portfolio campaigns.",
+    "skills": [
+      "Content Writing",
+      "Social Media",
+      "Google Analytics",
+      "Canva & Adobe Express",
+      "SEO Basics",
+      "Project Management"
+    ],
+    "experience": [
+      {
+        "role": "Secondary School Teacher",
+        "company": "Cardiff County Council Schools",
+        "period": "2018 – 2024",
+        "bullets": [
+          "Designed termly content and presentations for 150+ students and parents",
+          "Analysed assessment data to improve outcomes by 14% over two years",
+          "Led after-school media club producing newsletters and social posts"
+        ]
+      },
+      {
+        "role": "Marketing Portfolio Projects",
+        "company": "Self-Directed (2025)",
+        "period": "2025",
+        "bullets": [
+          "Ran Instagram campaign for local café — grew followers 40% in 8 weeks",
+          "Completed Google Digital Garage and HubSpot Inbound certifications"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "PGCE Secondary Education",
+      "institution": "Cardiff Met",
+      "year": "2018",
+      "raw": "PGCE Secondary Education — Cardiff Met, 2018\nBA English — University of Cardiff, 2017"
+    }
+  }
+}

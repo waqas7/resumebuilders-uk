@@ -1,0 +1,51 @@
+{
+  "id": "cv-after-career-break-uk",
+  "slug": "cv-after-career-break-uk",
+  "title": "CV After a Career Break (UK Example)",
+  "builderLabel": "Return to Work",
+  "previewVariant": "ats-standard",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Sarah Mitchell",
+    "title": "Project Coordinator",
+    "email": "sarah.mitchell@email.co.uk",
+    "phone": "+44 7700 901999",
+    "location": "Oxford, UK",
+    "summary": "Project coordinator returning to work after a 3-year career break for family care. Previously 7 years in PMO roles. Recently completed PRINCE2 Foundation and volunteer project coordination to refresh skills. Available immediately for hybrid or office roles.",
+    "skills": [
+      "Project Coordination",
+      "Stakeholder Updates",
+      "Microsoft Project",
+      "Risk Logs",
+      "Meeting Facilitation",
+      "PRINCE2 Foundation"
+    ],
+    "experience": [
+      {
+        "role": "Volunteer Project Coordinator",
+        "company": "Oxford Community Hub",
+        "period": "2024 – Present",
+        "bullets": [
+          "Coordinated refurbishment project with 12 volunteers and £15K budget",
+          "Maintained RAID logs and weekly status reports for charity trustees"
+        ]
+      },
+      {
+        "role": "PMO Analyst",
+        "company": "TechVenture Solutions",
+        "period": "2014 – 2021",
+        "bullets": [
+          "Supported portfolio of 8 IT projects with reporting for senior sponsors",
+          "Streamlined status reporting templates saving 4 hours per week team-wide",
+          "Facilitated steering meetings and tracked actions to closure"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "PRINCE2 Foundation",
+      "institution": "",
+      "year": "2024",
+      "raw": "PRINCE2 Foundation — 2024\nBA Business Management — Oxford Brookes, 2014"
+    }
+  }
+}

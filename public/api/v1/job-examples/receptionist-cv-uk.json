@@ -1,0 +1,51 @@
+{
+  "id": "receptionist-cv-uk",
+  "slug": "receptionist-cv-uk",
+  "title": "Receptionist CV Template UK — Front Desk & Office",
+  "builderLabel": "Receptionist",
+  "previewVariant": "minimal-clean",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Priya Nair",
+    "title": "Receptionist",
+    "email": "priya.nair@email.co.uk",
+    "phone": "+44 7700 901444",
+    "location": "London, UK",
+    "summary": "Welcoming receptionist with 4 years managing busy UK corporate and clinic front desks. Experienced in visitor sign-in, switchboard operation, room bookings, and delivering a professional first impression for 100+ daily visitors.",
+    "skills": [
+      "Visitor Management",
+      "Switchboard Operation",
+      "Outlook & Teams",
+      "Room Bookings",
+      "Confidentiality (GDPR)",
+      "Cash Handling"
+    ],
+    "experience": [
+      {
+        "role": "Front Desk Receptionist",
+        "company": "Westbridge Medical Centre, London",
+        "period": "2021 – Present",
+        "bullets": [
+          "Greeted 120+ patients daily while managing appointments and enquiries",
+          "Maintained GDPR-compliant sign-in procedures with zero data breaches",
+          "Coordinated courier deliveries and meeting room schedules for 20 staff"
+        ]
+      },
+      {
+        "role": "Hotel Receptionist",
+        "company": "The Crown Inn, Kensington",
+        "period": "2019 – 2021",
+        "bullets": [
+          "Handled check-ins, billing, and guest complaints with 4.8/5 review scores",
+          "Managed night audit handovers and cash reconciliation accurately"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Certificate in Hospitality",
+      "institution": "Westminster College",
+      "year": "2019",
+      "raw": "Certificate in Hospitality — Westminster College, 2019"
+    }
+  }
+}

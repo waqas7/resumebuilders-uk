@@ -1,0 +1,51 @@
+{
+  "id": "bar-staff-cv-uk",
+  "slug": "bar-staff-cv-uk",
+  "title": "Bar Staff CV Example UK — Pubs, Bars & Events",
+  "builderLabel": "Bar Staff",
+  "previewVariant": "modern-green",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Chloe Bennett",
+    "title": "Bar Staff",
+    "email": "chloe.bennett@email.co.uk",
+    "phone": "+44 7700 902208",
+    "location": "Liverpool, UK",
+    "summary": "Enthusiastic bar staff with 3 years in high-volume city-centre pubs. Skilled in cellar care, cocktail basics, till operation, and responsible alcohol service. Personal Licence holder. Available evenings and weekends.",
+    "skills": [
+      "Cellar Management",
+      "Personal Licence",
+      "Till Operation",
+      "Cocktail Basics",
+      "Stock Rotation",
+      "Customer Service"
+    ],
+    "experience": [
+      {
+        "role": "Senior Bar Staff",
+        "company": "The Dockside Pub, Liverpool",
+        "period": "2022 – Present",
+        "bullets": [
+          "Served 300+ customers on busy match-day shifts with zero service complaints",
+          "Managed cellar rotation and line cleaning — reduced wastage by 12%",
+          "Trained 3 new bar staff on tills, age verification, and conflict de-escalation"
+        ]
+      },
+      {
+        "role": "Bar Staff",
+        "company": "Liverpool Events Co.",
+        "period": "2021 – 2022",
+        "bullets": [
+          "Worked festival bars serving 500+ drinks per shift with accurate cash handling",
+          "Set up and broke down mobile bars to health and safety standards"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Personal Licence Holder",
+      "institution": "",
+      "year": "2022",
+      "raw": "Personal Licence Holder — 2022\nWSET Level 1 Award in Wines — 2023"
+    }
+  }
+}

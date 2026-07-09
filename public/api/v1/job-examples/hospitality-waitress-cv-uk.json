@@ -1,0 +1,51 @@
+{
+  "id": "hospitality-waitress-cv-uk",
+  "slug": "hospitality-waitress-cv-uk",
+  "title": "Waitress / Waiter CV Example UK — Hospitality & Restaurants",
+  "builderLabel": "Waitress / Waiter",
+  "previewVariant": "modern-green",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Luca Romano",
+    "title": "Waiter",
+    "email": "luca.romano@email.co.uk",
+    "phone": "+44 7700 902204",
+    "location": "Edinburgh, UK",
+    "summary": "Experienced waiter with 3 years in busy city-centre restaurants serving 100+ covers per shift. Strong upselling, allergen awareness, and team coordination on busy Friday and Saturday services.",
+    "skills": [
+      "Fine Dining Service",
+      "Allergen Awareness",
+      "POS / EPOS",
+      "Upselling",
+      "Wine Service Basics",
+      "Team Coordination"
+    ],
+    "experience": [
+      {
+        "role": "Waiter",
+        "company": "The Old Town Bistro, Edinburgh",
+        "period": "2022 – Present",
+        "bullets": [
+          "Served 80–120 covers per shift with consistently positive TripAdvisor mentions",
+          "Increased dessert upsell rate by 15% through menu knowledge training",
+          "Supported allergen queries accurately under Natasha's Law requirements"
+        ]
+      },
+      {
+        "role": "Front of House Assistant",
+        "company": "Harbour Hotel Group",
+        "period": "2021 – 2022",
+        "bullets": [
+          "Managed reservations and guest seating for 60-seat restaurant",
+          "Processed payments and split bills accurately on busy weekend services"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Food Hygiene Level 2",
+      "institution": "",
+      "year": "2021",
+      "raw": "Food Hygiene Level 2 — 2021\nAllergen Awareness Certificate — 2022"
+    }
+  }
+}

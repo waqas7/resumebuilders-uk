@@ -1,0 +1,50 @@
+{
+  "id": "student-cv-no-experience",
+  "slug": "student-cv-no-experience",
+  "title": "Student CV Template UK — No Experience Needed",
+  "builderLabel": "Student",
+  "previewVariant": "minimal-clean",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Aisha Khan",
+    "title": "Business Management Student",
+    "email": "aisha.khan@university.ac.uk",
+    "phone": "+44 7700 900321",
+    "location": "Manchester, UK",
+    "summary": "Motivated second-year Business Management student seeking part-time retail or admin roles. Strong communicator with society leadership experience and proven ability to balance studies with customer-facing work.",
+    "skills": [
+      "Microsoft Office",
+      "Customer Service",
+      "Team Leadership",
+      "Time Management",
+      "Cash Handling",
+      "Social Media"
+    ],
+    "experience": [
+      {
+        "role": "Volunteer Shop Assistant",
+        "company": "British Heart Foundation Charity Shop",
+        "period": "2024 – Present",
+        "bullets": [
+          "Assisted customers and organised stock on busy Saturday shifts",
+          "Processed donations and maintained tidy shop floor displays"
+        ]
+      },
+      {
+        "role": "Treasurer",
+        "company": "University Finance Society",
+        "period": "2023 – 2024",
+        "bullets": [
+          "Managed society budget of £2,400 and reported to 80+ members",
+          "Organised two careers events with local employers"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "BSc Business Management (2:1 predicted)",
+      "institution": "University of Manchester, 2023 —",
+      "year": "2026",
+      "raw": "BSc Business Management (2:1 predicted) — University of Manchester, 2023 – 2026\nA-Levels: Business (A), Economics (B), Maths (B) — 2023"
+    }
+  }
+}

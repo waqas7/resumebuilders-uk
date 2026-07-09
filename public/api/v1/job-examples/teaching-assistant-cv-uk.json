@@ -1,0 +1,51 @@
+{
+  "id": "teaching-assistant-cv-uk",
+  "slug": "teaching-assistant-cv-uk",
+  "title": "Teaching Assistant CV Example UK — Primary & Secondary",
+  "builderLabel": "Teaching Assistant",
+  "previewVariant": "classic-blue",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Emily Clarke",
+    "title": "Teaching Assistant",
+    "email": "emily.clarke@email.co.uk",
+    "phone": "+44 7700 902203",
+    "location": "Bristol, UK",
+    "summary": "Level 3 Teaching Assistant with 4 years supporting KS1 and KS2 pupils in mainstream and SEN settings. Skilled in phonics interventions, behaviour support, and safeguarding. Enhanced DBS on Update Service.",
+    "skills": [
+      "SEN Support",
+      "Phonics Interventions",
+      "Safeguarding",
+      "Behaviour Management",
+      "Lesson Preparation",
+      "1:1 Support"
+    ],
+    "experience": [
+      {
+        "role": "Teaching Assistant",
+        "company": "Oakwood Primary School, Bristol",
+        "period": "2021 – Present",
+        "bullets": [
+          "Supported class teacher with groups of 8 pupils — improved reading ages by 6 months on average",
+          "Delivered 1:1 phonics sessions for 12 children below expected standard",
+          "Completed Level 2 Safeguarding training and acted as first responder for welfare concerns"
+        ]
+      },
+      {
+        "role": "Learning Support Assistant",
+        "company": "Riverside Academy Trust",
+        "period": "2019 – 2021",
+        "bullets": [
+          "Supported pupil with EHCP in Year 3 — managed sensory breaks and communication aids",
+          "Prepared classroom resources and displays for weekly topic lessons"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Level 3 Diploma in Specialist Support for Teaching & Learning",
+      "institution": "",
+      "year": "2021",
+      "raw": "Level 3 Diploma in Specialist Support for Teaching & Learning — 2021\nEnhanced DBS · Paediatric First Aid"
+    }
+  }
+}

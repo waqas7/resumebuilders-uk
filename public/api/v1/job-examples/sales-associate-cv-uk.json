@@ -1,0 +1,51 @@
+{
+  "id": "sales-associate-cv-uk",
+  "slug": "sales-associate-cv-uk",
+  "title": "Sales Associate CV Example UK — Retail & Floor Sales",
+  "builderLabel": "Sales Associate",
+  "previewVariant": "modern-green",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Ryan O'Connor",
+    "title": "Sales Associate",
+    "email": "ryan.oconnor@email.co.uk",
+    "phone": "+44 7700 901333",
+    "location": "Manchester, UK",
+    "summary": "Energetic sales associate with 3 years on premium UK retail floors. Consistently exceeded personal sales targets through consultative selling, strong product knowledge, and building repeat customer relationships.",
+    "skills": [
+      "Consultative Selling",
+      "Upselling & Cross-Selling",
+      "POS Systems",
+      "Visual Merchandising",
+      "KPI Tracking",
+      "Customer Relationship Building"
+    ],
+    "experience": [
+      {
+        "role": "Sales Associate",
+        "company": "Apex Footwear, Trafford Centre",
+        "period": "2022 – Present",
+        "bullets": [
+          "Exceeded monthly sales targets by 24% over 6 consecutive quarters",
+          "Increased average transaction value by 15% through accessory upselling",
+          "Named Employee of the Month twice for conversion and mystery shop scores"
+        ]
+      },
+      {
+        "role": "Retail Sales Assistant",
+        "company": "Urban Style Co.",
+        "period": "2021 – 2022",
+        "bullets": [
+          "Processed returns and exchanges while preserving customer loyalty",
+          "Supported stock replenishment and floor resets during peak seasons"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "BTEC Level 3 Business",
+      "institution": "Manchester College",
+      "year": "2021",
+      "raw": "BTEC Level 3 Business — Manchester College, 2021"
+    }
+  }
+}

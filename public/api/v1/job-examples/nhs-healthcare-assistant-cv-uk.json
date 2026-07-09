@@ -1,0 +1,51 @@
+{
+  "id": "nhs-healthcare-assistant-cv-uk",
+  "slug": "nhs-healthcare-assistant-cv-uk",
+  "title": "NHS Healthcare Assistant CV Example UK — Band 2 & Band 3",
+  "builderLabel": "Healthcare Assistant",
+  "previewVariant": "ats-standard",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Priya Sharma",
+    "title": "Healthcare Assistant",
+    "email": "priya.sharma@email.co.uk",
+    "phone": "+44 7700 902205",
+    "location": "Leeds, UK",
+    "summary": "Band 3 Healthcare Assistant with 3 years on acute medical wards at an NHS Foundation Trust. Experienced in patient personal care, vital signs, EPR documentation, and multidisciplinary team working. Enhanced DBS held.",
+    "skills": [
+      "Patient Personal Care",
+      "Vital Signs",
+      "Moving & Handling",
+      "Infection Control",
+      "EPR Documentation",
+      "Safeguarding"
+    ],
+    "experience": [
+      {
+        "role": "Healthcare Assistant (Band 3)",
+        "company": "Leeds Teaching Hospitals NHS Trust",
+        "period": "2022 – Present",
+        "bullets": [
+          "Supported 12–15 patients daily with washing, dressing, nutrition, and mobility",
+          "Recorded observations and escalated NEWS2 scores to nursing staff promptly",
+          "Maintained zero patient handling incidents over 24 months"
+        ]
+      },
+      {
+        "role": "Healthcare Support Worker",
+        "company": "Yorkshire Community NHS Trust",
+        "period": "2020 – 2022",
+        "bullets": [
+          "Supported domiciliary visits for 10+ patients weekly under RN supervision",
+          "Completed Trust mandatory training including safeguarding and infection control"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Care Certificate",
+      "institution": "",
+      "year": "2020",
+      "raw": "Care Certificate — 2020\nNVQ Level 2 Clinical Healthcare Support · Enhanced DBS"
+    }
+  }
+}

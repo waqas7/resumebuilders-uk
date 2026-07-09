@@ -1,0 +1,51 @@
+{
+  "id": "cleaner-cv-uk",
+  "slug": "cleaner-cv-uk",
+  "title": "Cleaner CV Example UK — Office, Domestic & Commercial",
+  "builderLabel": "Cleaner",
+  "previewVariant": "ats-minimal",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Maria Santos",
+    "title": "Commercial Cleaner",
+    "email": "maria.santos@email.co.uk",
+    "phone": "+44 7700 902202",
+    "location": "London, UK",
+    "summary": "Reliable commercial cleaner with 5 years in office and retail environments across Central London. Skilled in COSHH procedures, infection control, and team supervision. Enhanced DBS held. Available early mornings and weekends.",
+    "skills": [
+      "COSHH Awareness",
+      "Infection Control",
+      "Floor Care",
+      "Team Supervision",
+      "Health & Safety",
+      "Time Management"
+    ],
+    "experience": [
+      {
+        "role": "Senior Cleaner",
+        "company": "CleanPro Facilities, London",
+        "period": "2021 – Present",
+        "bullets": [
+          "Supervised team of 6 cleaners across 3 office sites with 98% client satisfaction scores",
+          "Implemented colour-coded cloth system reducing cross-contamination complaints to zero",
+          "Completed COSHH training and maintained accurate chemical usage logs"
+        ]
+      },
+      {
+        "role": "Cleaner",
+        "company": "Retail Park Services",
+        "period": "2019 – 2021",
+        "bullets": [
+          "Cleaned high-footfall retail units before opening — floors, toilets, and food courts",
+          "Reported maintenance issues promptly to reduce slip hazards"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "NVQ Level 2 Cleaning & Support Services",
+      "institution": "",
+      "year": "2019",
+      "raw": "NVQ Level 2 Cleaning & Support Services — 2019\nEnhanced DBS (Update Service)"
+    }
+  }
+}

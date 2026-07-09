@@ -1,0 +1,51 @@
+{
+  "id": "warehouse-worker-cv-uk",
+  "slug": "warehouse-worker-cv-uk",
+  "title": "Warehouse Worker CV Example UK — Picking, Packing & Logistics",
+  "builderLabel": "Warehouse Worker",
+  "previewVariant": "ats-simple",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Marcus Hughes",
+    "title": "Warehouse Operative",
+    "email": "marcus.hughes@email.co.uk",
+    "phone": "+44 7700 900789",
+    "location": "Birmingham, UK",
+    "summary": "Hard-working warehouse operative with 4 years in high-volume distribution centres. Experienced in pick-and-pack, forklift operation (FLT certified), and meeting daily dispatch targets in fast-paced UK logistics environments.",
+    "skills": [
+      "Pick & Pack",
+      "Forklift / FLT",
+      "RF Handheld Scanners",
+      "Health & Safety",
+      "Stock Control",
+      "Loading Bays"
+    ],
+    "experience": [
+      {
+        "role": "Warehouse Operative",
+        "company": "SwiftLogistics UK, Birmingham",
+        "period": "2021 – Present",
+        "bullets": [
+          "Consistently picked 120+ units/hour with 99.4% accuracy across peak seasons",
+          "Operated counterbalance forklift in loading bays with zero safety incidents",
+          "Supported inventory counts reducing shrinkage discrepancies by 15%"
+        ]
+      },
+      {
+        "role": "Picker Packer",
+        "company": "NorthPack Fulfilment",
+        "period": "2020 – 2021",
+        "bullets": [
+          "Packed 200+ orders per shift for e-commerce clients to SLA deadlines",
+          "Maintained clean workstation standards under ISO warehouse procedures"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "NVQ Level 2 Warehousing & Storage",
+      "institution": "",
+      "year": "2020",
+      "raw": "NVQ Level 2 Warehousing & Storage — 2020"
+    }
+  }
+}

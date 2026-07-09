@@ -1,0 +1,51 @@
+{
+  "id": "delivery-driver-cv-uk",
+  "slug": "delivery-driver-cv-uk",
+  "title": "Delivery Driver CV Example UK — Van & Multi-Drop",
+  "builderLabel": "Delivery Driver",
+  "previewVariant": "ats-simple",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Ryan Cooper",
+    "title": "Delivery Driver",
+    "email": "ryan.cooper@email.co.uk",
+    "phone": "+44 7700 902206",
+    "location": "Birmingham, UK",
+    "summary": "Delivery driver with 4 years multi-drop van experience across the West Midlands. Clean UK licence, strong customer service, and handheld POD scanning. Available for 6-day weeks and peak seasons.",
+    "skills": [
+      "Multi-Drop Delivery",
+      "POD Scanning",
+      "Route Planning",
+      "Customer Service",
+      "Van Checks",
+      "Time Management"
+    ],
+    "experience": [
+      {
+        "role": "Delivery Driver",
+        "company": "SwiftParcel UK",
+        "period": "2021 – Present",
+        "bullets": [
+          "Completed 90+ deliveries daily with 97% first-time delivery success rate",
+          "Maintained clean licence with zero at-fault incidents over 4 years",
+          "Handled customer queries and redeliveries professionally at the door"
+        ]
+      },
+      {
+        "role": "Courier Driver",
+        "company": "CityLink Logistics",
+        "period": "2019 – 2021",
+        "bullets": [
+          "Delivered same-day parcels across Birmingham B-postcode districts",
+          "Used handheld scanners for real-time POD and route updates"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "UK Full Driving Licence (Clean) · Level 2 Customer Service",
+      "institution": "",
+      "year": "2019",
+      "raw": "UK Full Driving Licence (Clean) · Level 2 Customer Service — 2019"
+    }
+  }
+}

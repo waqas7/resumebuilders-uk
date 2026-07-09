@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/generate-seo-files.mjs",
+    "prebuild": "node scripts/generate-seo-files.mjs && node scripts/generate-job-examples-api.mjs",
+    "generate:job-api": "node scripts/generate-job-examples-api.mjs",
     "build": "next build",
     "postbuild": "node scripts/verify-seo-output.mjs",
     "start": "next start",

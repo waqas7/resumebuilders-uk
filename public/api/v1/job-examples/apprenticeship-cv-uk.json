@@ -1,0 +1,50 @@
+{
+  "id": "apprenticeship-cv-uk",
+  "slug": "apprenticeship-cv-uk",
+  "title": "Apprenticeship CV Example UK — School Leavers & Career Starters",
+  "builderLabel": "Apprentice",
+  "previewVariant": "minimal-clean",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Jayden Okonkwo",
+    "title": "Engineering Apprenticeship Applicant",
+    "email": "jayden.okonkwo@email.co.uk",
+    "phone": "+44 7700 902210",
+    "location": "Sheffield, UK",
+    "summary": "Motivated school leaver seeking a Level 3 engineering apprenticeship. Strong GCSE results in Maths and Physics with weekend warehouse experience and a passion for hands-on mechanical work.",
+    "skills": [
+      "Mechanical Interest",
+      "Teamwork",
+      "Health & Safety",
+      "Microsoft Office",
+      "Problem Solving",
+      "Punctuality"
+    ],
+    "experience": [
+      {
+        "role": "Warehouse Assistant (Part-Time)",
+        "company": "SteelCity Logistics",
+        "period": "2024 – Present",
+        "bullets": [
+          "Supported pick-and-pack team on Saturday shifts — 99% accuracy rate",
+          "Followed health and safety procedures in busy distribution environment"
+        ]
+      },
+      {
+        "role": "School Engineering Club",
+        "company": "Forge Valley School",
+        "period": "2023 – 2025",
+        "bullets": [
+          "Built pedal-powered generator for regional STEM competition — team placed 2nd",
+          "Used hand tools and basic CAD under teacher supervision"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "GCSEs: Maths (7), Physics (6), English (5), Design & Technology (6)",
+      "institution": "",
+      "year": "2025",
+      "raw": "GCSEs: Maths (7), Physics (6), English (5), Design & Technology (6) — 2025\nForge Valley School, Sheffield"
+    }
+  }
+}

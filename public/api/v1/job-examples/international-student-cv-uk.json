@@ -1,0 +1,50 @@
+{
+  "id": "international-student-cv-uk",
+  "slug": "international-student-cv-uk",
+  "title": "CV for International Students in the UK",
+  "builderLabel": "International Student",
+  "previewVariant": "minimal-clean",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Wei Zhang",
+    "title": "MSc Data Science Student",
+    "email": "wei.zhang@university.ac.uk",
+    "phone": "+44 7700 901777",
+    "location": "Birmingham, UK",
+    "summary": "International MSc student seeking part-time analytics or admin roles in the UK (20 hours/week during term). Strong Python and SQL skills with internship experience in Shanghai and active membership in the university careers society.",
+    "skills": [
+      "Python & SQL",
+      "Microsoft Excel",
+      "Data Visualisation",
+      "Mandarin & English",
+      "Team Collaboration",
+      "Research & Reporting"
+    ],
+    "experience": [
+      {
+        "role": "Part-Time Library Assistant",
+        "company": "University of Birmingham",
+        "period": "2024 – Present",
+        "bullets": [
+          "Supported 200+ students weekly with catalogue queries and study space bookings",
+          "Maintained accurate loan records and assisted with events setup"
+        ]
+      },
+      {
+        "role": "Data Analyst Intern",
+        "company": "Shanghai Retail Analytics Co.",
+        "period": "Summer 2024",
+        "bullets": [
+          "Cleaned sales datasets and built dashboards that informed stock decisions",
+          "Presented findings to managers in English and Mandarin"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "MSc Data Science",
+      "institution": "University of Birmingham, 2024 — 2025 (expected)",
+      "year": "",
+      "raw": "MSc Data Science — University of Birmingham, 2024 – 2025 (expected)\nBSc Statistics — Fudan University, 2020 – 2024"
+    }
+  }
+}

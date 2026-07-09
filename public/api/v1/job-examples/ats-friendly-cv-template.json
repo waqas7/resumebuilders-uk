@@ -1,0 +1,51 @@
+{
+  "id": "ats-friendly-cv-template",
+  "slug": "ats-friendly-cv-template",
+  "title": "ATS Friendly CV Template UK — Pass Applicant Tracking Systems",
+  "builderLabel": "ATS Optimised",
+  "previewVariant": "ats-keyword",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Daniel Wright",
+    "title": "Operations Coordinator",
+    "email": "daniel.wright@email.co.uk",
+    "phone": "+44 7700 900654",
+    "location": "London, UK",
+    "summary": "Operations coordinator with 5 years improving processes in UK SMEs. Experienced in scheduling, vendor management, and cross-functional reporting. Seeking roles where data-driven operations drive growth.",
+    "skills": [
+      "Process Improvement",
+      "Microsoft Excel",
+      "Project Coordination",
+      "Stakeholder Management",
+      "SAP",
+      "Reporting & KPIs"
+    ],
+    "experience": [
+      {
+        "role": "Operations Coordinator",
+        "company": "HarborTech Solutions Ltd",
+        "period": "2022 – Present",
+        "bullets": [
+          "Reduced order processing time by 30% through workflow standardisation",
+          "Coordinated 12 vendors and maintained 98% on-time delivery rate",
+          "Built weekly KPI dashboards used by senior leadership"
+        ]
+      },
+      {
+        "role": "Operations Administrator",
+        "company": "ClearPath Services",
+        "period": "2019 – 2022",
+        "bullets": [
+          "Managed scheduling for 25 field staff across London and the South East",
+          "Cut invoice errors by 40% after implementing checklist procedures"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "BA Business Administration",
+      "institution": "University of Greenwich",
+      "year": "2019",
+      "raw": "BA Business Administration — University of Greenwich, 2019"
+    }
+  }
+}

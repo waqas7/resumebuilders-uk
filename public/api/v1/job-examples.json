@@ -1,0 +1,207 @@
+{
+  "version": 1,
+  "updatedAt": "2026-07-09T22:25:18.951Z",
+  "count": 25,
+  "examples": [
+    {
+      "id": "retail-assistant-cv-uk",
+      "slug": "retail-assistant-cv-uk",
+      "title": "Retail Assistant CV Example That Gets Interviews (UK)",
+      "builderLabel": "Retail Assistant",
+      "previewVariant": "ats-standard",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "warehouse-worker-cv-uk",
+      "slug": "warehouse-worker-cv-uk",
+      "title": "Warehouse Worker CV Example UK — Picking, Packing & Logistics",
+      "builderLabel": "Warehouse Worker",
+      "previewVariant": "ats-simple",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "student-cv-no-experience",
+      "slug": "student-cv-no-experience",
+      "title": "Student CV Template UK — No Experience Needed",
+      "builderLabel": "Student",
+      "previewVariant": "minimal-clean",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "ats-friendly-cv-template",
+      "slug": "ats-friendly-cv-template",
+      "title": "ATS Friendly CV Template UK — Pass Applicant Tracking Systems",
+      "builderLabel": "ATS Optimised",
+      "previewVariant": "ats-keyword",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "career-change-cv-uk",
+      "slug": "career-change-cv-uk",
+      "title": "Career Change CV Example UK — Switch Industries With Confidence",
+      "builderLabel": "Career Change",
+      "previewVariant": "professional-classic",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "customer-service-cv-uk",
+      "slug": "customer-service-cv-uk",
+      "title": "Customer Service CV Example UK — Get More Interviews",
+      "builderLabel": "Customer Service",
+      "previewVariant": "ats-standard",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "admin-assistant-cv-uk",
+      "slug": "admin-assistant-cv-uk",
+      "title": "Admin Assistant CV Template UK — Office & PA Roles",
+      "builderLabel": "Admin Assistant",
+      "previewVariant": "classic-blue",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "sales-associate-cv-uk",
+      "slug": "sales-associate-cv-uk",
+      "title": "Sales Associate CV Example UK — Retail & Floor Sales",
+      "builderLabel": "Sales Associate",
+      "previewVariant": "modern-green",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "receptionist-cv-uk",
+      "slug": "receptionist-cv-uk",
+      "title": "Receptionist CV Template UK — Front Desk & Office",
+      "builderLabel": "Receptionist",
+      "previewVariant": "minimal-clean",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "simple-cv-template-interviews",
+      "slug": "simple-cv-template-interviews",
+      "title": "Simple CV Template That Gets Interviews",
+      "builderLabel": "Simple CV",
+      "previewVariant": "ats-minimal",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "professional-cv-format-uk-2026",
+      "slug": "professional-cv-format-uk-2026",
+      "title": "Professional CV Format UK (2026)",
+      "builderLabel": "Professional CV",
+      "previewVariant": "professional-navy",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "international-student-cv-uk",
+      "slug": "international-student-cv-uk",
+      "title": "CV for International Students in the UK",
+      "builderLabel": "International Student",
+      "previewVariant": "minimal-clean",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "career-change-cv-no-experience",
+      "slug": "career-change-cv-no-experience",
+      "title": "CV for Career Change (No Experience in New Field)",
+      "builderLabel": "Career Pivot",
+      "previewVariant": "professional-classic",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "cv-after-career-break-uk",
+      "slug": "cv-after-career-break-uk",
+      "title": "CV After a Career Break (UK Example)",
+      "builderLabel": "Return to Work",
+      "previewVariant": "ats-standard",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "care-home-worker-cv-uk",
+      "slug": "care-home-worker-cv-uk",
+      "title": "Care Home CV Example UK — Compelling Template for Care Jobs",
+      "builderLabel": "Care Home Worker",
+      "previewVariant": "ats-standard",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "hgv-driver-cv-uk",
+      "slug": "hgv-driver-cv-uk",
+      "title": "HGV Driver CV Example UK — Class 1 & Class 2",
+      "builderLabel": "HGV Driver",
+      "previewVariant": "ats-standard",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "cleaner-cv-uk",
+      "slug": "cleaner-cv-uk",
+      "title": "Cleaner CV Example UK — Office, Domestic & Commercial",
+      "builderLabel": "Cleaner",
+      "previewVariant": "ats-minimal",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "teaching-assistant-cv-uk",
+      "slug": "teaching-assistant-cv-uk",
+      "title": "Teaching Assistant CV Example UK — Primary & Secondary",
+      "builderLabel": "Teaching Assistant",
+      "previewVariant": "classic-blue",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "hospitality-waitress-cv-uk",
+      "slug": "hospitality-waitress-cv-uk",
+      "title": "Waitress / Waiter CV Example UK — Hospitality & Restaurants",
+      "builderLabel": "Waitress / Waiter",
+      "previewVariant": "modern-green",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "nhs-healthcare-assistant-cv-uk",
+      "slug": "nhs-healthcare-assistant-cv-uk",
+      "title": "NHS Healthcare Assistant CV Example UK — Band 2 & Band 3",
+      "builderLabel": "Healthcare Assistant",
+      "previewVariant": "ats-standard",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "delivery-driver-cv-uk",
+      "slug": "delivery-driver-cv-uk",
+      "title": "Delivery Driver CV Example UK — Van & Multi-Drop",
+      "builderLabel": "Delivery Driver",
+      "previewVariant": "ats-simple",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "kitchen-porter-cv-uk",
+      "slug": "kitchen-porter-cv-uk",
+      "title": "Kitchen Porter CV Example UK — Hotels & Restaurants",
+      "builderLabel": "Kitchen Porter",
+      "previewVariant": "ats-minimal",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "bar-staff-cv-uk",
+      "slug": "bar-staff-cv-uk",
+      "title": "Bar Staff CV Example UK — Pubs, Bars & Events",
+      "builderLabel": "Bar Staff",
+      "previewVariant": "modern-green",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "security-guard-cv-uk",
+      "slug": "security-guard-cv-uk",
+      "title": "Security Guard CV Example UK — SIA Licensed",
+      "builderLabel": "Security Guard",
+      "previewVariant": "professional-navy",
+      "suggestedTemplateHint": "ats"
+    },
+    {
+      "id": "apprenticeship-cv-uk",
+      "slug": "apprenticeship-cv-uk",
+      "title": "Apprenticeship CV Example UK — School Leavers & Career Starters",
+      "builderLabel": "Apprentice",
+      "previewVariant": "minimal-clean",
+      "suggestedTemplateHint": "ats"
+    }
+  ]
+}

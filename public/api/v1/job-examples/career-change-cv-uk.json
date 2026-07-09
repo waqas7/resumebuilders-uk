@@ -1,0 +1,51 @@
+{
+  "id": "career-change-cv-uk",
+  "slug": "career-change-cv-uk",
+  "title": "Career Change CV Example UK — Switch Industries With Confidence",
+  "builderLabel": "Career Change",
+  "previewVariant": "professional-classic",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Elena Vasquez",
+    "title": "Aspiring HR Coordinator",
+    "email": "elena.vasquez@email.co.uk",
+    "phone": "+44 7700 900987",
+    "location": "Bristol, UK",
+    "summary": "Former retail team leader transitioning into HR coordination. 6 years managing people, rotas, and performance conversations on busy shop floors. Bringing strong communication, conflict resolution, and onboarding experience to people-focused roles.",
+    "skills": [
+      "People Management",
+      "Recruitment Support",
+      "Onboarding",
+      "Employee Relations",
+      "Scheduling",
+      "HR Administration"
+    ],
+    "experience": [
+      {
+        "role": "Team Leader (Retail)",
+        "company": "Coastal Home Stores, Bristol",
+        "period": "2019 – Present",
+        "bullets": [
+          "Led team of 8; conducted monthly 1:1s and supported 3 internal promotions",
+          "Reduced staff turnover by 22% through improved onboarding checklists",
+          "Handled colleague grievances and escalations with store management"
+        ]
+      },
+      {
+        "role": "HR Administration Certificate",
+        "company": "CIPD Level 3 (In Progress)",
+        "period": "2025 – Present",
+        "bullets": [
+          "Studying employment law, recruitment fundamentals, and HR record-keeping",
+          "Completed practical assignment on writing job descriptions and person specs"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "CIPD Level 3 Foundation Certificate in People Practice (in progress)",
+      "institution": "",
+      "year": "",
+      "raw": "CIPD Level 3 Foundation Certificate in People Practice (in progress)\nNVQ Level 3 Management — 2020"
+    }
+  }
+}

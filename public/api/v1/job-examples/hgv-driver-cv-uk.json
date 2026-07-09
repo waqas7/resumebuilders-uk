@@ -1,0 +1,51 @@
+{
+  "id": "hgv-driver-cv-uk",
+  "slug": "hgv-driver-cv-uk",
+  "title": "HGV Driver CV Example UK — Class 1 & Class 2",
+  "builderLabel": "HGV Driver",
+  "previewVariant": "ats-standard",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "David Walsh",
+    "title": "HGV Class 1 Driver",
+    "email": "david.walsh@email.co.uk",
+    "phone": "+44 7700 902201",
+    "location": "Manchester, UK",
+    "summary": "HGV Class 1 driver with 6 years trunking and multi-drop experience across the North West. CPC and digital tachograph certified with clean licence and strong safety record. Available for nights, tramping, and weekend shifts.",
+    "skills": [
+      "Class 1 HGV",
+      "CPC Card",
+      "Digital Tachograph",
+      "Load Securing",
+      "Vehicle Checks",
+      "Multi-Drop"
+    ],
+    "experience": [
+      {
+        "role": "HGV Class 1 Driver",
+        "company": "NorthWest Haulage Ltd",
+        "period": "2021 – Present",
+        "bullets": [
+          "Completed 50+ trunking runs weekly with 99.2% on-time delivery rate",
+          "Maintained zero preventable accidents over 180,000+ recorded miles",
+          "Completed daily walk-around checks and defect reports to DVSA standards"
+        ]
+      },
+      {
+        "role": "Class 2 Delivery Driver",
+        "company": "CityFresh Distribution",
+        "period": "2019 – 2021",
+        "bullets": [
+          "Delivered 25+ multi-drop loads daily across Greater Manchester",
+          "Trained 2 new drivers on load securing and reverse manoeuvres"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "CPC Driver Certificate of Professional Competence",
+      "institution": "",
+      "year": "2019",
+      "raw": "CPC Driver Certificate of Professional Competence — 2019\nClass 1 HGV Licence · Class 2 HGV Licence"
+    }
+  }
+}

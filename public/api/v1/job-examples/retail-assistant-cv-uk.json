@@ -1,0 +1,51 @@
+{
+  "id": "retail-assistant-cv-uk",
+  "slug": "retail-assistant-cv-uk",
+  "title": "Retail Assistant CV Example That Gets Interviews (UK)",
+  "builderLabel": "Retail Assistant",
+  "previewVariant": "ats-standard",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Sophie Turner",
+    "title": "Retail Assistant",
+    "email": "sophie.turner@email.co.uk",
+    "phone": "+44 7700 900456",
+    "location": "Leeds, UK",
+    "summary": "Friendly retail assistant with 3+ years on busy UK high-street floors. Skilled in customer service, till operation, visual merchandising, and hitting daily sales KPIs. Reliable team player available for weekends and peak trading.",
+    "skills": [
+      "Customer Service",
+      "POS / Till Operation",
+      "Stock Replenishment",
+      "Visual Merchandising",
+      "Cash Handling",
+      "Team Collaboration"
+    ],
+    "experience": [
+      {
+        "role": "Retail Sales Assistant",
+        "company": "Riverstone Fashion, Leeds",
+        "period": "2022 – Present",
+        "bullets": [
+          "Served 80+ customers daily with 4.8/5 satisfaction scores on mystery shops",
+          "Exceeded personal sales targets by 18% during Q4 trading periods",
+          "Trained 2 new starters on till procedures and store standards"
+        ]
+      },
+      {
+        "role": "Shop Floor Assistant",
+        "company": "ValueMart Superstore",
+        "period": "2021 – 2022",
+        "bullets": [
+          "Maintained aisle standards and reduced out-of-stock complaints by 25%",
+          "Processed returns and exchanges accurately at busy checkout desks"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "BTEC Level 2 Retail Knowledge",
+      "institution": "Leeds City College",
+      "year": "2021",
+      "raw": "BTEC Level 2 Retail Knowledge — Leeds City College, 2021"
+    }
+  }
+}

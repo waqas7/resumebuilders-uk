@@ -1,0 +1,51 @@
+{
+  "id": "professional-cv-format-uk-2026",
+  "slug": "professional-cv-format-uk-2026",
+  "title": "Professional CV Format UK (2026)",
+  "builderLabel": "Professional CV",
+  "previewVariant": "professional-navy",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Victoria Hughes",
+    "title": "Finance Analyst",
+    "email": "victoria.hughes@email.co.uk",
+    "phone": "+44 7700 901666",
+    "location": "London, UK",
+    "summary": "ACA-part qualified finance analyst with 4 years in UK mid-market firms. Experienced in management reporting, variance analysis, and supporting audit-ready month-end close processes for stakeholders.",
+    "skills": [
+      "Management Reporting",
+      "Excel & Power BI",
+      "Variance Analysis",
+      "Month-End Close",
+      "SAP",
+      "Stakeholder Communication"
+    ],
+    "experience": [
+      {
+        "role": "Finance Analyst",
+        "company": "Sterling Advisory Group",
+        "period": "2022 – Present",
+        "bullets": [
+          "Prepared monthly board packs used by CFO and department heads",
+          "Improved forecast accuracy by 12% through revised driver-based models",
+          "Supported external audit with clean PBC schedules two years running"
+        ]
+      },
+      {
+        "role": "Assistant Accountant",
+        "company": "Bridgefield LLP",
+        "period": "2020 – 2022",
+        "bullets": [
+          "Reconciled nominal ledgers and processed supplier payments on time",
+          "Automated expense reports saving 6 hours per month in admin"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "BSc Accounting & Finance",
+      "institution": "LSE",
+      "year": "2020",
+      "raw": "BSc Accounting & Finance — LSE, 2020\nACA (part qualified) — ICAEW"
+    }
+  }
+}

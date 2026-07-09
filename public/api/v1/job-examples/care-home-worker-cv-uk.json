@@ -1,0 +1,61 @@
+{
+  "id": "care-home-worker-cv-uk",
+  "slug": "care-home-worker-cv-uk",
+  "title": "Care Home CV Example UK — Compelling Template for Care Jobs",
+  "builderLabel": "Care Home Worker",
+  "previewVariant": "ats-standard",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Amelia Hughes",
+    "title": "Care Assistant",
+    "email": "amelia.hughes@email.co.uk",
+    "phone": "+44 7700 902100",
+    "location": "Nottingham, UK",
+    "summary": "Compassionate care assistant with 4 years in CQC-registered residential and dementia care homes across the East Midlands. Skilled in personal care, moving & handling, medication support, and safeguarding. Reliable on rotating shifts including weekends and bank holidays.",
+    "skills": [
+      "Personal Care & Hygiene",
+      "Moving & Handling",
+      "Medication Administration",
+      "Safeguarding Adults",
+      "Dementia & Person-Centred Care",
+      "First Aid & Manual Handling"
+    ],
+    "experience": [
+      {
+        "role": "Senior Care Assistant",
+        "company": "Meadowbrook Care Home, Nottingham",
+        "period": "2022 – Present",
+        "bullets": [
+          "Supported 20+ residents daily with dignity-focused personal care and mobility assistance",
+          "Administered prescribed medications under MAR chart protocols with zero safeguarding incidents",
+          "Mentored 3 new starters on infection control, documentation, and de-escalation for dementia behaviours"
+        ]
+      },
+      {
+        "role": "Care Assistant",
+        "company": "Willow Lodge Residential Care",
+        "period": "2020 – 2022",
+        "bullets": [
+          "Maintained accurate daily care notes and handover records for nursing and management teams",
+          "Reduced falls risk through proactive repositioning and mobility support plans",
+          "Built trusted relationships with residents' families during visits and care plan reviews"
+        ]
+      },
+      {
+        "role": "Healthcare Support Volunteer",
+        "company": "Age UK Nottingham",
+        "period": "2019 – 2020",
+        "bullets": [
+          "Assisted with wellbeing activities and companionship for 15+ elderly service users weekly",
+          "Completed safeguarding awareness training before starting client-facing shifts"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "NVQ Level 2 Health & Social Care",
+      "institution": "Nottingham College",
+      "year": "2020",
+      "raw": "NVQ Level 2 Health & Social Care — Nottingham College, 2020\nEnhanced DBS (Update Service) · Moving & Handling Certificate · Medication Administration Training"
+    }
+  }
+}

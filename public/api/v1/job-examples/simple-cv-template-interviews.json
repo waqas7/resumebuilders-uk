@@ -1,0 +1,50 @@
+{
+  "id": "simple-cv-template-interviews",
+  "slug": "simple-cv-template-interviews",
+  "title": "Simple CV Template That Gets Interviews",
+  "builderLabel": "Simple CV",
+  "previewVariant": "ats-minimal",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Tom Fletcher",
+    "title": "Operations Assistant",
+    "email": "tom.fletcher@email.co.uk",
+    "phone": "+44 7700 901555",
+    "location": "Sheffield, UK",
+    "summary": "Dependable operations assistant with 3 years supporting warehouse and office teams. Strong organiser with excellent attention to detail and a track record of meeting deadlines in busy environments.",
+    "skills": [
+      "Scheduling",
+      "Data Entry",
+      "Team Support",
+      "Health & Safety",
+      "Microsoft Excel",
+      "Communication"
+    ],
+    "experience": [
+      {
+        "role": "Operations Assistant",
+        "company": "Northern Logistics Ltd",
+        "period": "2022 – Present",
+        "bullets": [
+          "Coordinated daily dispatch schedules for 12 drivers with 98% on-time rate",
+          "Updated inventory spreadsheets and flagged stock issues before shortages"
+        ]
+      },
+      {
+        "role": "Warehouse Administrator",
+        "company": "PackRight UK",
+        "period": "2020 – 2022",
+        "bullets": [
+          "Processed shipping documentation and answered supplier queries",
+          "Supported monthly stock counts with accurate record-keeping"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "GCSEs including Maths & English",
+      "institution": "",
+      "year": "2019",
+      "raw": "GCSEs including Maths & English — 2019"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "kitchen-porter-cv-uk",
+  "slug": "kitchen-porter-cv-uk",
+  "title": "Kitchen Porter CV Example UK — Hotels & Restaurants",
+  "builderLabel": "Kitchen Porter",
+  "previewVariant": "ats-minimal",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Tom Hughes",
+    "title": "Kitchen Porter",
+    "email": "tom.hughes@email.co.uk",
+    "phone": "+44 7700 902207",
+    "location": "Cardiff, UK",
+    "summary": "Hard-working kitchen porter with 2 years supporting busy hotel kitchens through breakfast, lunch, and dinner services. Food Hygiene Level 2 certified with strong cleanliness standards and reliable attendance.",
+    "skills": [
+      "Food Hygiene Level 2",
+      "Pot Wash & Cleaning",
+      "Stock Rotation",
+      "Kitchen Prep",
+      "HACCP Basics",
+      "Shift Work"
+    ],
+    "experience": [
+      {
+        "role": "Kitchen Porter",
+        "company": "Grand Cardiff Hotel",
+        "period": "2022 – Present",
+        "bullets": [
+          "Supported brigade of 10 chefs during 200+ cover banquet services",
+          "Maintained pot wash and kitchen floors to audit-ready standards",
+          "Rotated dry store stock reducing waste from expired goods by 20%"
+        ]
+      },
+      {
+        "role": "Kitchen Assistant",
+        "company": "Harbour Bistro",
+        "period": "2021 – 2022",
+        "bullets": [
+          "Prepped vegetables and basic mise en place for lunch service",
+          "Completed closing clean-down checklist every shift without exceptions"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "Food Hygiene Level 2",
+      "institution": "",
+      "year": "2021",
+      "raw": "Food Hygiene Level 2 — 2021"
+    }
+  }
+}

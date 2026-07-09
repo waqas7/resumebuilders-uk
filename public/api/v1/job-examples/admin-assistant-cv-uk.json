@@ -1,0 +1,51 @@
+{
+  "id": "admin-assistant-cv-uk",
+  "slug": "admin-assistant-cv-uk",
+  "title": "Admin Assistant CV Template UK — Office & PA Roles",
+  "builderLabel": "Admin Assistant",
+  "previewVariant": "classic-blue",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Hannah Clarke",
+    "title": "Administrative Assistant",
+    "email": "hannah.clarke@email.co.uk",
+    "phone": "+44 7700 901222",
+    "location": "Edinburgh, UK",
+    "summary": "Reliable administrative assistant with 5 years supporting senior managers in professional services. Expert in diary management, travel booking, minute-taking, and maintaining confidential records in fast-paced UK offices.",
+    "skills": [
+      "Diary Management",
+      "Microsoft Office",
+      "Minute Taking",
+      "Travel Booking",
+      "Expense Processing",
+      "Data Entry"
+    ],
+    "experience": [
+      {
+        "role": "Administrative Assistant",
+        "company": "MacLeod & Partners Solicitors",
+        "period": "2021 – Present",
+        "bullets": [
+          "Managed calendars for 3 partners and coordinated 15+ meetings weekly",
+          "Processed £40K+ monthly expenses with 100% accuracy for finance review",
+          "Drafted correspondence and formatted legal documents to firm standards"
+        ]
+      },
+      {
+        "role": "Office Administrator",
+        "company": "Highland Property Group",
+        "period": "2019 – 2021",
+        "bullets": [
+          "Maintained CRM records and responded to client enquiries within 24 hours",
+          "Organised office supplies and onboarding packs for new starters"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "HNC Administration & IT",
+      "institution": "Edinburgh College",
+      "year": "2019",
+      "raw": "HNC Administration & IT — Edinburgh College, 2019"
+    }
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "id": "security-guard-cv-uk",
+  "slug": "security-guard-cv-uk",
+  "title": "Security Guard CV Example UK — SIA Licensed",
+  "builderLabel": "Security Guard",
+  "previewVariant": "professional-navy",
+  "suggestedTemplateHint": "ats",
+  "cv": {
+    "name": "Marcus Reid",
+    "title": "Security Officer",
+    "email": "marcus.reid@email.co.uk",
+    "phone": "+44 7700 902209",
+    "location": "Glasgow, UK",
+    "summary": "SIA-licensed security officer with 5 years across retail, construction, and event sites. Skilled in CCTV monitoring, access control, incident reporting, and conflict de-escalation. Available for 12-hour shifts including nights.",
+    "skills": [
+      "SIA Door Supervisor",
+      "CCTV Monitoring",
+      "Access Control",
+      "Incident Reporting",
+      "Conflict De-escalation",
+      "First Aid"
+    ],
+    "experience": [
+      {
+        "role": "Security Officer",
+        "company": "Guardian Security Solutions",
+        "period": "2020 – Present",
+        "bullets": [
+          "Monitored CCTV and patrolled retail park — reduced shrinkage incidents by 18%",
+          "Completed detailed incident reports for police and client management",
+          "De-escalated 20+ confrontations without physical intervention"
+        ]
+      },
+      {
+        "role": "Event Steward",
+        "company": "Celtic Park Events",
+        "period": "2018 – 2020",
+        "bullets": [
+          "Managed crowd flow and entry searches for 50,000+ capacity fixtures",
+          "Coordinated with police and medics during emergency evacuations drills"
+        ]
+      }
+    ],
+    "education": {
+      "degree": "SIA Door Supervisor Licence · SIA CCTV Operator Licence",
+      "institution": "",
+      "year": "",
+      "raw": "SIA Door Supervisor Licence · SIA CCTV Operator Licence\nFirst Aid at Work — 2023"
+    }
+  }
+}
